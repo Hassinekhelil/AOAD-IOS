@@ -7,21 +7,103 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4458B7CE138451A07542529F /* Pods_AOAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AF89DB1951D15996E72DA9 /* Pods_AOAD.framework */; };
+		DD022B7623365FA100384E15 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD022B7523365FA100384E15 /* ChartViewController.swift */; };
+		DD1C82132320FF25008B1179 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD1C82152320FF25008B1179 /* Localizable.strings */; };
+		DD1C821C23214052008B1179 /* Pib_class.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C821B23214052008B1179 /* Pib_class.swift */; };
+		DD2C604F231D0F52003B10B1 /* ChartTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2C604E231D0F52003B10B1 /* ChartTypeViewController.swift */; };
+		DD2C6051231D2237003B10B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2C6050231D2237003B10B1 /* Constants.swift */; };
+		DD2C6053231D44B5003B10B1 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2C6052231D44B5003B10B1 /* MapsViewController.swift */; };
+		DD2C6055231D456A003B10B1 /* UIStepperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2C6054231D456A003B10B1 /* UIStepperController.swift */; };
+		DD2C6057231D569E003B10B1 /* ChartSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2C6056231D569E003B10B1 /* ChartSettingsViewController.swift */; };
+		DD2C605A231EB708003B10B1 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2C6059231EB708003B10B1 /* SplashScreenViewController.swift */; };
+		DD2C605D231EBF9B003B10B1 /* PrefManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2C605C231EBF9B003B10B1 /* PrefManager.swift */; };
 		DD3C107823155B7000412EA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C107723155B7000412EA9 /* AppDelegate.swift */; };
-		DD3C107A23155B7000412EA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C107923155B7000412EA9 /* ViewController.swift */; };
 		DD3C107D23155B7000412EA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3C107B23155B7000412EA9 /* Main.storyboard */; };
 		DD3C107F23155B7200412EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3C107E23155B7200412EA9 /* Assets.xcassets */; };
 		DD3C108223155B7200412EA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3C108023155B7200412EA9 /* LaunchScreen.storyboard */; };
+		DD553E142330EF1F00CC3288 /* AOAD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD553E122330EF1F00CC3288 /* AOAD.xcdatamodeld */; };
+		DD7780EC233A6C110043C47F /* CommunicationOffice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7780EB233A6C110043C47F /* CommunicationOffice.swift */; };
+		DD7DC41B232A4FB000AD2286 /* SelfSizedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DC41A232A4FB000AD2286 /* SelfSizedTableView.swift */; };
+		DD7DC41D232A5B3300AD2286 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DC41C232A5B3300AD2286 /* NewsDetailsViewController.swift */; };
+		DD7DC41F232A900800AD2286 /* WhoAreWeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DC41E232A900800AD2286 /* WhoAreWeViewController.swift */; };
+		DD7DC421232ABD6100AD2286 /* MemberCountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DC420232ABD6100AD2286 /* MemberCountriesViewController.swift */; };
+		DD7DC423232ABD8B00AD2286 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DC422232ABD8B00AD2286 /* Country.swift */; };
+		DD7DC427232B6D6700AD2286 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DC426232B6D6700AD2286 /* DocumentsViewController.swift */; };
+		DD7DC429232B6DC800AD2286 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DC428232B6DC800AD2286 /* Document.swift */; };
+		DD7DC42B232B715A00AD2286 /* DocumentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DC42A232B715A00AD2286 /* DocumentDetailsViewController.swift */; };
+		DD7DC42D232B8A8900AD2286 /* Network&DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DC42C232B8A8900AD2286 /* Network&DB.swift */; };
+		DD7DC42F232B8B5700AD2286 /* NetworkBDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DC42E232B8B5700AD2286 /* NetworkBDViewController.swift */; };
+		DD8D28F82319312900FFAB66 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8D28F72319312900FFAB66 /* MainViewController.swift */; };
+		DDA29F54232797E6003C72C3 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA29F53232797E6003C72C3 /* SideMenuViewController.swift */; };
+		DDA29F56232799F9003C72C3 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA29F55232799F9003C72C3 /* ContainerViewController.swift */; };
+		DDA29F5923279B39003C72C3 /* MainDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA29F5823279B39003C72C3 /* MainDelegate.swift */; };
+		DDA29F5B23279B6E003C72C3 /* SideMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA29F5A23279B6E003C72C3 /* SideMenuDelegate.swift */; };
+		DDA29F5F2327FA3C003C72C3 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA29F5E2327FA3C003C72C3 /* NewsViewController.swift */; };
+		DDA29F6323280487003C72C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDA29F6223280487003C72C3 /* GoogleService-Info.plist */; };
+		DDA29F652328CBB2003C72C3 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA29F642328CBB2003C72C3 /* News.swift */; };
+		DDB2326F233B365B0045AC03 /* Ministrie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB2326E233B365B0045AC03 /* Ministrie.swift */; };
+		DDB23271233B377B0045AC03 /* CommunicationOfficeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB23270233B377B0045AC03 /* CommunicationOfficeViewController.swift */; };
+		DDB23273233B3A800045AC03 /* MinistriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB23272233B3A800045AC03 /* MinistriesViewController.swift */; };
+		DDB23275233B3BF10045AC03 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB23274233B3BF10045AC03 /* ContactUsViewController.swift */; };
+		DDB23279233B505A0045AC03 /* CustomAlertViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB23278233B505A0045AC03 /* CustomAlertViewViewController.swift */; };
+		DDB2327D233B82150045AC03 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB2327C233B82150045AC03 /* Chart.swift */; };
+		DDEC0AC12319340E00CE5E15 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC0ABF2319340E00CE5E15 /* StatisticsViewController.swift */; };
+		DDEC0AC4231959D400CE5E15 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC0AC3231959D400CE5E15 /* NetworkManager.swift */; };
+		DDEC0AC6231C593100CE5E15 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC0AC5231C593100CE5E15 /* CheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08410F3E1C6799ED43CDC0D3 /* Pods-AOAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOAD.debug.xcconfig"; path = "Target Support Files/Pods-AOAD/Pods-AOAD.debug.xcconfig"; sourceTree = "<group>"; };
+		82B637CD92411BD2880C92B2 /* Pods-AOAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOAD.release.xcconfig"; path = "Target Support Files/Pods-AOAD/Pods-AOAD.release.xcconfig"; sourceTree = "<group>"; };
+		B8AF89DB1951D15996E72DA9 /* Pods_AOAD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AOAD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD022B7523365FA100384E15 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		DD1C82162320FF26008B1179 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD1C821B23214052008B1179 /* Pib_class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pib_class.swift; sourceTree = "<group>"; };
+		DD2C604E231D0F52003B10B1 /* ChartTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTypeViewController.swift; sourceTree = "<group>"; };
+		DD2C6050231D2237003B10B1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DD2C6052231D44B5003B10B1 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		DD2C6054231D456A003B10B1 /* UIStepperController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStepperController.swift; sourceTree = "<group>"; };
+		DD2C6056231D569E003B10B1 /* ChartSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartSettingsViewController.swift; sourceTree = "<group>"; };
+		DD2C6059231EB708003B10B1 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		DD2C605C231EBF9B003B10B1 /* PrefManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefManager.swift; sourceTree = "<group>"; };
 		DD3C107423155B7000412EA9 /* AOAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD3C107723155B7000412EA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD3C107923155B7000412EA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD3C107C23155B7000412EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD3C107E23155B7200412EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD3C108123155B7200412EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD3C108323155B7200412EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD553DF0232FBCB500CC3288 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD553E132330EF1F00CC3288 /* AOAD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AOAD.xcdatamodel; sourceTree = "<group>"; };
+		DD7780EB233A6C110043C47F /* CommunicationOffice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationOffice.swift; sourceTree = "<group>"; };
+		DD7DC41A232A4FB000AD2286 /* SelfSizedTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfSizedTableView.swift; sourceTree = "<group>"; };
+		DD7DC41C232A5B3300AD2286 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
+		DD7DC41E232A900800AD2286 /* WhoAreWeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoAreWeViewController.swift; sourceTree = "<group>"; };
+		DD7DC420232ABD6100AD2286 /* MemberCountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCountriesViewController.swift; sourceTree = "<group>"; };
+		DD7DC422232ABD8B00AD2286 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		DD7DC426232B6D6700AD2286 /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
+		DD7DC428232B6DC800AD2286 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		DD7DC42A232B715A00AD2286 /* DocumentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentDetailsViewController.swift; sourceTree = "<group>"; };
+		DD7DC42C232B8A8900AD2286 /* Network&DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network&DB.swift"; sourceTree = "<group>"; };
+		DD7DC42E232B8B5700AD2286 /* NetworkBDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBDViewController.swift; sourceTree = "<group>"; };
+		DD8D28F72319312900FFAB66 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DDA29F49232290A3003C72C3 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DDA29F53232797E6003C72C3 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		DDA29F55232799F9003C72C3 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		DDA29F5823279B39003C72C3 /* MainDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDelegate.swift; sourceTree = "<group>"; };
+		DDA29F5A23279B6E003C72C3 /* SideMenuDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuDelegate.swift; sourceTree = "<group>"; };
+		DDA29F5E2327FA3C003C72C3 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		DDA29F6223280487003C72C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DDA29F642328CBB2003C72C3 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		DDB2326E233B365B0045AC03 /* Ministrie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ministrie.swift; sourceTree = "<group>"; };
+		DDB23270233B377B0045AC03 /* CommunicationOfficeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationOfficeViewController.swift; sourceTree = "<group>"; };
+		DDB23272233B3A800045AC03 /* MinistriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistriesViewController.swift; sourceTree = "<group>"; };
+		DDB23274233B3BF10045AC03 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		DDB23278233B505A0045AC03 /* CustomAlertViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewViewController.swift; sourceTree = "<group>"; };
+		DDB2327C233B82150045AC03 /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		DDEC0ABF2319340E00CE5E15 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		DDEC0AC3231959D400CE5E15 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DDEC0AC5231C593100CE5E15 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +111,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4458B7CE138451A07542529F /* Pods_AOAD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B44C04D82CFB6C7BD1F544B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08410F3E1C6799ED43CDC0D3 /* Pods-AOAD.debug.xcconfig */,
+				82B637CD92411BD2880C92B2 /* Pods-AOAD.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D583C1C502BBFB00E58151F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8AF89DB1951D15996E72DA9 /* Pods_AOAD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD2C605B231EBF7A003B10B1 /* DataManger */ = {
+			isa = PBXGroup;
+			children = (
+				DD2C605C231EBF9B003B10B1 /* PrefManager.swift */,
+			);
+			path = DataManger;
+			sourceTree = "<group>";
+		};
 		DD3C106B23155B7000412EA9 = {
 			isa = PBXGroup;
 			children = (
 				DD3C107623155B7000412EA9 /* AOAD */,
 				DD3C107523155B7000412EA9 /* Products */,
+				B44C04D82CFB6C7BD1F544B2 /* Pods */,
+				D583C1C502BBFB00E58151F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +164,116 @@
 		DD3C107623155B7000412EA9 /* AOAD */ = {
 			isa = PBXGroup;
 			children = (
+				DD2C605B231EBF7A003B10B1 /* DataManger */,
+				DD3C108E23155E3200412EA9 /* Utilities */,
+				DD3C108D23155E2B00412EA9 /* Ressources */,
+				DD3C108C23155E1E00412EA9 /* Networking */,
+				DD3C108B23155E1300412EA9 /* Controllers */,
+				DD3C108A23155E0D00412EA9 /* View */,
+				DD3C108923155E0100412EA9 /* Models */,
 				DD3C107723155B7000412EA9 /* AppDelegate.swift */,
-				DD3C107923155B7000412EA9 /* ViewController.swift */,
-				DD3C107B23155B7000412EA9 /* Main.storyboard */,
-				DD3C107E23155B7200412EA9 /* Assets.xcassets */,
-				DD3C108023155B7200412EA9 /* LaunchScreen.storyboard */,
+				DDA29F6223280487003C72C3 /* GoogleService-Info.plist */,
 				DD3C108323155B7200412EA9 /* Info.plist */,
+				DD1C82152320FF25008B1179 /* Localizable.strings */,
+				DD553E122330EF1F00CC3288 /* AOAD.xcdatamodeld */,
 			);
 			path = AOAD;
+			sourceTree = "<group>";
+		};
+		DD3C108923155E0100412EA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD1C821B23214052008B1179 /* Pib_class.swift */,
+				DDA29F642328CBB2003C72C3 /* News.swift */,
+				DD7DC422232ABD8B00AD2286 /* Country.swift */,
+				DD7DC428232B6DC800AD2286 /* Document.swift */,
+				DD7DC42C232B8A8900AD2286 /* Network&DB.swift */,
+				DD7780EB233A6C110043C47F /* CommunicationOffice.swift */,
+				DDB2326E233B365B0045AC03 /* Ministrie.swift */,
+				DDB2327C233B82150045AC03 /* Chart.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD3C108A23155E0D00412EA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD3C107B23155B7000412EA9 /* Main.storyboard */,
+				DD3C108023155B7200412EA9 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD3C108B23155E1300412EA9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD8D28F72319312900FFAB66 /* MainViewController.swift */,
+				DDEC0ABF2319340E00CE5E15 /* StatisticsViewController.swift */,
+				DD2C604E231D0F52003B10B1 /* ChartTypeViewController.swift */,
+				DD2C6052231D44B5003B10B1 /* MapsViewController.swift */,
+				DD2C6056231D569E003B10B1 /* ChartSettingsViewController.swift */,
+				DD2C6059231EB708003B10B1 /* SplashScreenViewController.swift */,
+				DDA29F53232797E6003C72C3 /* SideMenuViewController.swift */,
+				DDA29F55232799F9003C72C3 /* ContainerViewController.swift */,
+				DDA29F5E2327FA3C003C72C3 /* NewsViewController.swift */,
+				DD7DC41C232A5B3300AD2286 /* NewsDetailsViewController.swift */,
+				DD7DC41E232A900800AD2286 /* WhoAreWeViewController.swift */,
+				DD7DC420232ABD6100AD2286 /* MemberCountriesViewController.swift */,
+				DD7DC426232B6D6700AD2286 /* DocumentsViewController.swift */,
+				DD7DC42A232B715A00AD2286 /* DocumentDetailsViewController.swift */,
+				DD7DC42E232B8B5700AD2286 /* NetworkBDViewController.swift */,
+				DD022B7523365FA100384E15 /* ChartViewController.swift */,
+				DDB23270233B377B0045AC03 /* CommunicationOfficeViewController.swift */,
+				DDB23272233B3A800045AC03 /* MinistriesViewController.swift */,
+				DDB23274233B3BF10045AC03 /* ContactUsViewController.swift */,
+				DDB23278233B505A0045AC03 /* CustomAlertViewViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DD3C108C23155E1E00412EA9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DDEC0AC3231959D400CE5E15 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DD3C108D23155E2B00412EA9 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				DD3C107E23155B7200412EA9 /* Assets.xcassets */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		DD3C108E23155E3200412EA9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DDA29F5723279B1A003C72C3 /* Protocols */,
+				DD8D28EB2315716000FFAB66 /* Custom view */,
+				DD2C6050231D2237003B10B1 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DD8D28EB2315716000FFAB66 /* Custom view */ = {
+			isa = PBXGroup;
+			children = (
+				DD7DC41A232A4FB000AD2286 /* SelfSizedTableView.swift */,
+				DDEC0AC5231C593100CE5E15 /* CheckBox.swift */,
+				DD2C6054231D456A003B10B1 /* UIStepperController.swift */,
+			);
+			path = "Custom view";
+			sourceTree = "<group>";
+		};
+		DDA29F5723279B1A003C72C3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DDA29F5823279B39003C72C3 /* MainDelegate.swift */,
+				DDA29F5A23279B6E003C72C3 /* SideMenuDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +283,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD3C108623155B7200412EA9 /* Build configuration list for PBXNativeTarget "AOAD" */;
 			buildPhases = (
+				0DA9A83F0AB9B5F587A522B6 /* [CP] Check Pods Manifest.lock */,
 				DD3C107023155B7000412EA9 /* Sources */,
 				DD3C107123155B7000412EA9 /* Frameworks */,
 				DD3C107223155B7000412EA9 /* Resources */,
+				2CECE85F5EC8AF66951D1853 /* [CP] Embed Pods Frameworks */,
+				6ACE9327F12AD6BBB7149850 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -106,6 +321,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
+				fr,
 			);
 			mainGroup = DD3C106B23155B7000412EA9;
 			productRefGroup = DD3C107523155B7000412EA9 /* Products */;
@@ -123,6 +340,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD3C108223155B7200412EA9 /* LaunchScreen.storyboard in Resources */,
+				DD1C82132320FF25008B1179 /* Localizable.strings in Resources */,
+				DDA29F6323280487003C72C3 /* GoogleService-Info.plist in Resources */,
 				DD3C107F23155B7200412EA9 /* Assets.xcassets in Resources */,
 				DD3C107D23155B7000412EA9 /* Main.storyboard in Resources */,
 			);
@@ -130,19 +349,154 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DA9A83F0AB9B5F587A522B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AOAD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CECE85F5EC8AF66951D1853 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AOAD/Pods-AOAD-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AnyChartiOS/AnyChartiOS.framework",
+				"${BUILT_PRODUCTS_DIR}/CarbonKit/CarbonKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwitchLanguage/SwitchLanguage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnyChartiOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CarbonKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwitchLanguage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AOAD/Pods-AOAD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ACE9327F12AD6BBB7149850 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AOAD/Pods-AOAD-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AOAD/Pods-AOAD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD3C107023155B7000412EA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD3C107A23155B7000412EA9 /* ViewController.swift in Sources */,
+				DDB2327D233B82150045AC03 /* Chart.swift in Sources */,
+				DD2C6053231D44B5003B10B1 /* MapsViewController.swift in Sources */,
+				DD2C6055231D456A003B10B1 /* UIStepperController.swift in Sources */,
+				DD022B7623365FA100384E15 /* ChartViewController.swift in Sources */,
+				DD2C605A231EB708003B10B1 /* SplashScreenViewController.swift in Sources */,
+				DD2C6057231D569E003B10B1 /* ChartSettingsViewController.swift in Sources */,
+				DDEC0AC12319340E00CE5E15 /* StatisticsViewController.swift in Sources */,
+				DD7DC42D232B8A8900AD2286 /* Network&DB.swift in Sources */,
+				DDB23271233B377B0045AC03 /* CommunicationOfficeViewController.swift in Sources */,
+				DD7DC42B232B715A00AD2286 /* DocumentDetailsViewController.swift in Sources */,
+				DDEC0AC6231C593100CE5E15 /* CheckBox.swift in Sources */,
+				DD553E142330EF1F00CC3288 /* AOAD.xcdatamodeld in Sources */,
+				DDA29F5F2327FA3C003C72C3 /* NewsViewController.swift in Sources */,
+				DDB2326F233B365B0045AC03 /* Ministrie.swift in Sources */,
+				DD7DC42F232B8B5700AD2286 /* NetworkBDViewController.swift in Sources */,
+				DD7DC423232ABD8B00AD2286 /* Country.swift in Sources */,
+				DD7DC41F232A900800AD2286 /* WhoAreWeViewController.swift in Sources */,
+				DD7DC421232ABD6100AD2286 /* MemberCountriesViewController.swift in Sources */,
+				DD7DC427232B6D6700AD2286 /* DocumentsViewController.swift in Sources */,
+				DDEC0AC4231959D400CE5E15 /* NetworkManager.swift in Sources */,
+				DDB23273233B3A800045AC03 /* MinistriesViewController.swift in Sources */,
 				DD3C107823155B7000412EA9 /* AppDelegate.swift in Sources */,
+				DD2C6051231D2237003B10B1 /* Constants.swift in Sources */,
+				DD7DC41B232A4FB000AD2286 /* SelfSizedTableView.swift in Sources */,
+				DDA29F56232799F9003C72C3 /* ContainerViewController.swift in Sources */,
+				DD1C821C23214052008B1179 /* Pib_class.swift in Sources */,
+				DD7780EC233A6C110043C47F /* CommunicationOffice.swift in Sources */,
+				DD2C604F231D0F52003B10B1 /* ChartTypeViewController.swift in Sources */,
+				DD2C605D231EBF9B003B10B1 /* PrefManager.swift in Sources */,
+				DDA29F5B23279B6E003C72C3 /* SideMenuDelegate.swift in Sources */,
+				DDA29F54232797E6003C72C3 /* SideMenuViewController.swift in Sources */,
+				DD7DC41D232A5B3300AD2286 /* NewsDetailsViewController.swift in Sources */,
+				DD7DC429232B6DC800AD2286 /* Document.swift in Sources */,
+				DDB23279233B505A0045AC03 /* CustomAlertViewViewController.swift in Sources */,
+				DD8D28F82319312900FFAB66 /* MainViewController.swift in Sources */,
+				DDA29F652328CBB2003C72C3 /* News.swift in Sources */,
+				DDA29F5923279B39003C72C3 /* MainDelegate.swift in Sources */,
+				DDB23275233B3BF10045AC03 /* ContactUsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		DD1C82152320FF25008B1179 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD1C82162320FF26008B1179 /* en */,
+				DDA29F49232290A3003C72C3 /* ar */,
+				DD553DF0232FBCB500CC3288 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		DD3C107B23155B7000412EA9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -166,6 +520,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -227,6 +582,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -280,16 +636,21 @@
 		};
 		DD3C108723155B7200412EA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08410F3E1C6799ED43CDC0D3 /* Pods-AOAD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9427JD6GPX;
 				INFOPLIST_FILE = AOAD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aoad.AOAD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,16 +658,21 @@
 		};
 		DD3C108823155B7200412EA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82B637CD92411BD2880C92B2 /* Pods-AOAD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9427JD6GPX;
 				INFOPLIST_FILE = AOAD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aoad.AOAD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -334,6 +700,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD553E122330EF1F00CC3288 /* AOAD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD553E132330EF1F00CC3288 /* AOAD.xcdatamodel */,
+			);
+			currentVersion = DD553E132330EF1F00CC3288 /* AOAD.xcdatamodel */;
+			path = AOAD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DD3C106C23155B7000412EA9 /* Project object */;
 }

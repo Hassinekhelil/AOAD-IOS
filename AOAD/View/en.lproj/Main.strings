@@ -1,0 +1,84 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "013-q4-9Mh"; */
+"013-q4-9Mh.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Validate Statistics"; ObjectID = "1bm-R9-qIv"; */
+"1bm-R9-qIv.normalTitle" = "Validate Statistics";
+
+/* Class = "UILabel"; text = "Agricultral data and statistics"; ObjectID = "2vs-b1-EnD"; */
+"2vs-b1-EnD.text" = "Agricultral data and statistics";
+
+/* Class = "UILabel"; text = "POWERED BY ACDAES"; ObjectID = "4bI-ns-haF"; */
+"4bI-ns-haF.text" = "POWERED BY ACDAES";
+
+/* Class = "UILabel"; text = "Date to :"; ObjectID = "4qv-sR-Xd3"; */
+"4qv-sR-Xd3.text" = "Date to :";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "7on-07-Vj5"; */
+"7on-07-Vj5.text" = "Detail";
+
+/* Class = "UILabel"; text = "Regions"; ObjectID = "8bf-cZ-jQc"; */
+"8bf-cZ-jQc.text" = "Regions";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "8px-2h-VMm"; */
+"8px-2h-VMm.text" = "Title";
+
+/* Class = "UILabel"; text = "ALL"; ObjectID = "8yj-ah-Bv1"; */
+"8yj-ah-Bv1.text" = "ALL";
+
+/* Class = "UIButton"; normalTitle = "Validate Statistics"; ObjectID = "Dci-Uq-Igu"; */
+"Dci-Uq-Igu.normalTitle" = "Validate Statistics";
+
+/* Class = "UILabel"; text = "Choice of statistical items to compare"; ObjectID = "Eix-gj-bVS"; */
+"Eix-gj-bVS.text" = "Choice of statistical items to compare";
+
+/* Class = "UIButton"; normalTitle = "ENGLISH"; ObjectID = "H7F-qY-zo9"; */
+"H7F-qY-zo9.normalTitle" = "ENGLISH";
+
+/* Class = "UIButton"; normalTitle = "Validate Statistics"; ObjectID = "QSI-OB-I1b"; */
+"QSI-OB-I1b.normalTitle" = "Validate Statistics";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "RT4-ov-d43"; */
+"RT4-ov-d43.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "العربية"; ObjectID = "SRb-OV-sjH"; */
+"SRb-OV-sjH.normalTitle" = "العربية";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "TSA-gE-UwS"; */
+"TSA-gE-UwS.text" = "Country";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "TyV-hu-aHG"; */
+"TyV-hu-aHG.text" = "Detail";
+
+/* Class = "UILabel"; text = "Agricultral data and statistics"; ObjectID = "Vb0-Dz-o40"; */
+"Vb0-Dz-o40.text" = "Agricultral data and statistics";
+
+/* Class = "UIButton"; normalTitle = "FRANÇAIS"; ObjectID = "YgA-lS-lcL"; */
+"YgA-lS-lcL.normalTitle" = "FRANÇAIS";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "bg7-SL-cY7"; */
+"bg7-SL-cY7.text" = "Detail";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "kFT-oj-WXO"; */
+"kFT-oj-WXO.text" = "Title";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "qwi-wa-irf"; */
+"qwi-wa-irf.title" = "Item";
+
+/* Class = "UILabel"; text = "Date to :"; ObjectID = "s0A-gB-Wef"; */
+"s0A-gB-Wef.text" = "Date to :";
+
+/* Class = "UILabel"; text = "Date of :"; ObjectID = "sqt-9N-hbs"; */
+"sqt-9N-hbs.text" = "Date of :";
+
+/* Class = "UILabel"; text = "Date of :"; ObjectID = "tP0-L6-bpH"; */
+"tP0-L6-bpH.text" = "Date of :";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "uBx-2f-zJv"; */
+"uBx-2f-zJv.text" = "Title";
+
+/* Class = "UILabel"; text = "Agricultral data and statistics"; ObjectID = "v8W-k8-867"; */
+"v8W-k8-867.text" = "Agricultral data and statistics";
+
+/* Class = "UILabel"; text = "Compare between the following member countries :"; ObjectID = "wii-xc-jHD"; */
+"wii-xc-jHD.text" = "Compare between the following member countries :";

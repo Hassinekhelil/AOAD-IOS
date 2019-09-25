@@ -1,0 +1,168 @@
+/* 
+  Localizable.strings
+  AOAD
+
+  Created by Hassine on 05/09/2019.
+  Copyright © 2019 aoad. All rights reserved.
+*/
+"AOAD" = "AOAD";
+"Arab Organization for Agricultural Development" = "Arab Organization for Agricultural Development";
+"back" = "back";
+"Statistics" = "Statistics";
+"News" = "News";
+"Documents" = "Documents";
+"Networks & DB" = "Networks & DB";
+"Date of :" = "Date of :";
+"Date to :" = "Date to :";
+"Validate statistics" = "Validate statistics";
+"Choice of statistical items to compare" = "Choice of statistical items to compare";
+
+//SideMenuOptions
+"Favorite list" = "Favorite list";
+"Presentation of the organization" = "Presentation of the organization";
+"Who are we?" = "Who are we?";
+"Organizational chart" = "Organizational chart";
+"Member Country" = "Member country";
+"Links" = "Links";
+"Communication Office" = "Communication office";
+"Departments" = "Ministries";
+"Photos" = "Photos";
+"Videos" = "Videos";
+"Communication" = "communication";
+"Language" = "Language";
+"Share" = "Share";
+"Contact us" = "Contact us";
+
+"List of member countries" = "List of member countries";
+
+"All" = "All";
+"Population"  = "Population";
+"Rural population"  = "Rural population";
+"Man power"  = "Man power";
+"Agricultural Manpower"  = "Agricultural Manpower";
+
+"All" = "All";
+"Geographic area"  = "Geographic area";
+"Total arable land"  = "Total arable land";
+"Forest area"  = "Forest area";
+"Grassland"  = "Grassland";
+
+"All" = "All";
+"Total Agricultural and Fisheries Loans"  = "Total Agricultural and Fisheries Loans";
+"Total Support to Agriculture and Fisheries Sector"  = "Total Support to Agriculture and Fisheries Sector";
+"Total Subsidies to Agriculture and Fisheries Sector"  = "Total Subsidies to Agriculture and Fisheries Sector";
+
+"All" = "All";
+"Wholesale Exports"  = "Wholesale Exports";
+"Agricultural exports"  = "Agricultural exports";
+"Wholesale Imports"  = "Wholesale Imports";
+"Agricultural imports"  = "Agricultural imports";
+
+"All" = "All";
+"Area of grain"  = "Area of grain";
+"Production of Grain"  = "Production of Grain";
+"Tubers area"  = "Tubers area";
+"Production of tubers"  = "Production of tubers";
+"Sugar Crop Area"  = "Sugar Crop Area";
+"Production of Sugar Crop"  = "Production of Sugar Crop";
+
+"All" = "All";
+"Number of cows per thousand head"  = "Number of cows per thousand head";
+"Number of Sheep in Thousand Heads"  = "Number of sheep in thousand heads";
+"Goats in 1000 Heads"  = "Number of goats in thousand heads";
+"Number of camels per thousand head"  = "Number of camels per thousand head";
+"Number of horses per thousand head"  = "Number of horses per thousand head";
+"Number of mules and donkeys per thousand head"  = "Number of mules and donkeys per thousand head";
+
+"All" = "All";
+"Total red meat production per ton"  = "Total red meat production per ton";
+"Production of meat from cattle, cattle and buffalo per ton"  = "Production of meat from cattle, cattle and buffalo per ton";
+"Production of meat from sheep and goats per ton"  = "Production of meat from sheep and goats per ton";
+"Meat production from camels per ton"  = "Meat production from camels per ton";
+"Production of viscous meat per ton"  = "Production of viscous meat per ton";
+
+"All" = "All";
+"Production of a thousand tons of chicken meat"  = "Production of a thousand tons of chicken meat";
+"Production of other poultry meat by thousand tons"  = "Production of other poultry meat by thousand tons";
+"Production of rabbit meat in thousand tons"  = "Production of rabbit meat in thousand tons";
+"Production of cat meat in thousand tons"  = "Production of cat meat in thousand tons";
+"Egg production in million eggs"  = "Egg production in million eggs";
+
+"All" = "All";
+"Production of honey per ton"  = "Production of honey per ton";
+"Production of tonnes of leather"  = "Production of tonnes of leather";
+"Production of wool per ton"  = "Production of wool per ton";
+
+"All" = "All";
+"Production of cow's milk per ton"  = "Production of cow's milk per ton";
+"Production of buffalo milk per ton"  = "Production of buffalo milk per ton";
+"Production of sheep milk per ton"  = "Production of sheep milk per ton";
+"Production of goat milk per ton"  = "Production of goat milk per ton";
+"Production of camel milk per ton"  = "Production of camel milk per ton";
+
+"All" = "All";
+"Ton fisheries from marine sources"  = "Ton fisheries from marine sources";
+"Farms from tonnes of marine sources"  = "Farms from tonnes of marine sources";
+"Tons of freshwater fisheries per ton"  = "Tons of freshwater fisheries per ton";
+"Farms from freshwater sources per ton"  = "Farms from freshwater sources per ton";
+"Ton algae fisheries"  = "Ton algae fisheries";
+"Ton algae farms"  = "Ton algae farms";
+
+"All" = "All";
+"Tractors"  = "Tractors";
+"Combine harvesters"  = "Combine harvesters";
+"Seeders"  = "Seeders";
+"Insecticide Sprayers"  = "Insecticide Sprayers";
+"Water Pumps"  = "Water Pumps";
+"Other Supplies"  = "Other Supplies";
+
+"All" = "All";
+"Total pesticide production in terms of quantity per ton"  = "Total pesticide production in terms of quantity per ton";
+"Total pesticide production in terms of value in million dollars"  = "Total pesticide production in terms of value in million dollars";
+"Total veterinary treatments in terms of quantity per ton"  = "Total veterinary treatments in terms of quantity per ton";
+"Total Veterinary Remedies in Million Dollars"  = "Total Veterinary Remedies in Million Dollars";
+
+"All" = "All";
+"National production of nitrogen fertilizers per ton"  = "National production of nitrogen fertilizers per ton";
+"Total nitrogen fertilizer consumption in ton"  = "Total nitrogen fertilizer consumption in ton";
+"National production of phosphate fertilizers per ton"  = "National production of phosphate fertilizers per tonne";
+"Total consumption of phosphate fertilizers in ton"  = "Total consumption of phosphate fertilizers in tonnes";
+"National production of potash fertilizers per ton"  = "National production of potash fertilizers per tonne";
+"Total consumption of potassium fertilizer in ton"  = "Total consumption of potassium fertilizer in tonnes";
+
+"Hashemite kingdom of Jordan" = "Hashemite kingdom of Jordan";
+"United Arab Emirates" = "United Arab Emirates";
+"Kingdom of Bahrain" = "Kingdom of Bahrain";
+"Republic of Tunisia"= "Republic of Tunisia";
+"Republic of Algeria" = "Republic of Algeria";
+"Republic of Djibouti" = "Republic of Djibouti";
+"Kingdom of Saudi Arabia"= "Kingdom of Saudi Arabia";
+"Republic of The Sudan" = "Republic of The Sudan";
+"Syrian Arab Republic" = "Syrian Arab Republic";
+"Somali Democratic Republic" = "Somali Democratic Republic";
+"Republic of Iraq" = "Republic of Iraq";
+"Sultanate of Oman" = "Sultanate of Oman";
+"State of Palestine" = "State of Palestine";
+"Qatar" = "Qatar";
+"Kuwait" = "Kuwait";
+"Republic of Lebanon" = "Republic of Lebanon";
+"Libya" = "Libya";
+"Arab Republic of Egypt" = "Arab Republic of Egypt";
+"Kingdom of Morocco" = "Kingdom of Morocco";
+"Islamic Republic of Mauritania" = "Islamic Republic of Mauritania";
+"Republic of Yemen" = "Republic of Yemen";
+"Union of the Comoros"= "Union of the Comoros";
+
+"Arab Maghreb" = "Arab Maghreb";
+"Middle" = "Middle";
+"Arab Orient" = "Arab Orient";
+"Arabian Peninsula" = "Arabian Peninsula";
+
+"Staistic on" = "Statistic on";
+
+"adress" = "Arab Organization for Agricultural Development (AOAD) Box 474, Khartoum, Republic of the Sudan";
+"phone" = "Phone:  00249183472176";
+"fax" = "Fax: 00249 183471050";
+
+"General Directorate of the Organization for Agricultural Development" = "Direction générale de l'Organisation de développement agricole";
+

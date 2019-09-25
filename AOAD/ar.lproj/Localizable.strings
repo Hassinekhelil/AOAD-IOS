@@ -1,0 +1,166 @@
+/* 
+  Localizable.strings
+  AOAD
+
+  Created by Hassine on 05/09/2019.
+  Copyright © 2019 aoad. All rights reserved.
+*/
+"AOAD" = "AOAD";
+"Arab Organization for Agricultural Development" = "المنظمة العربية للتنمية الزراعية";
+"back" = "رجوع";
+"Statistics" = "إحصائيات";
+"News" = "مستجدات";
+"Documents" = "إصدارات";
+"Networks & DB" = "الشبكات وقواعد البيانات";
+"Date of :" = "السنة من";
+"Date to :" = "السنة إلى";
+"Validate statistics" = "عرض الإحصائيات";
+"Choice of statistical items to compare" = "اختيار العناصر الإحصائية للمقارنة";
+
+//SideMenuOptions
+"Favorite list" = "القائمة المفضلة";
+"Presentation of the organization" = "تعريف المنظمة";
+"Who are we?" = "من نحن؟";
+"Organizational chart" = "الهيكل التنظيمي";
+"Member Country" = "الدول الأعضاء";
+"Links" = "روابط";
+"Communication Office" = "المكاتب وضباط الإتصال";
+"Departments" = "وزارات الزراعة العربية";
+"Photos" = "صور";
+"Videos" = "فيديو";
+"Communication" = "مشاركة";
+"Language" = "لغة";
+"Share" = "شارك";
+"Contact us" = "اتصل بنا";
+
+"List of member countries" = "قائمة الدول الأعضاء";
+
+"All" = "الكل";
+"Population"  = "السكان";
+"Rural population"  = "السكان الريفيين";
+"Man power"  = "القوى العاملة";
+"Agricultural Manpower"  = "القوى العاملة الزراعية";
+
+"All" = "الكل";
+"Geographic area"  = "الرقعة الجغرافية";
+"Total arable land"  = "جملة الأراضي الصالحة للزراعة";
+"Forest area"  = "مساحة الغابات";
+"Grassland"  = "مساحة المراعى";
+
+"All" = "الكل";
+"Total Agricultural and Fisheries Loans"  = "جملة القروض الزراعية والسمكية";
+"Total Support to Agriculture and Fisheries Sector"  = "جملة الدعم المقدم لقطاع الزراعة والثروة السمكية";
+"Total Subsidies to Agriculture and Fisheries Sector"  = "جملة الإعانات المقدمة لقطاع الزراعة والثروة السمكية";
+
+"All" = "الكل";
+"Wholesale Exports"  = "صادرات كلية";
+"Agricultural exports"  = "صادرات زراعية";
+"Wholesale Imports"  = "واردات كلية";
+"Agricultural imports"  = "واردات زراعية";
+
+"All" = "الكل";
+"Area of grain"  = "مساحة الحبوب";
+"Production of Grain"  = "إنتاج الحبوب";
+"Tubers area"  = "مساحة الدرنات";
+"Production of tubers"  = "إنتاج الدرنات";
+"Sugar Crop Area"  = "مساحة المحاصيل السكرية";
+"Production of Sugar Crop"  = "إنتاج المحاصيل السكرية";
+
+"All" = "الكل";
+"Number of cows per thousand head"  = "أعداد الابقار بالألف رأس";
+"Number of Sheep in Thousand Heads"  = "أعداد الأغنام بالألف رأس";
+"Goats in 1000 Heads"  = "أعداد الماعز بالألف رأس";
+"Number of camels per thousand head"  = "أعداد الإبل بالألف رأس";
+"Number of horses per thousand head"  = "أعداد الخيول بالألف رأس";
+"Number of mules and donkeys per thousand head"  = "أعداد البغال وحمير بالألف رأس";
+
+"All" = "الكل";
+"Total red meat production per ton"  = "اجمالى انتاج اللحوم الحمراء بالطن";
+"Production of meat from cattle, cattle and buffalo per ton"  = "انتاج اللحوم من ماشية وابقار وجاموس بالطن";
+"Production of meat from sheep and goats per ton"  = "انتاج اللحوم من اغنام وماعز بالطن";
+"Meat production from camels per ton"  = "انتاج اللحوم من إبل بالطن";
+"Production of viscous meat per ton"  = "انتاج لحوم الأحشاء بالطن";
+
+"All" = "الكل";
+"Production of a thousand tons of chicken meat"  = "انتاج لحوم الدجاج بألف طن";
+"Production of other poultry meat by thousand tons"  = "انتاج لحوم الدواجن الاخرى بألف طن";
+"Production of rabbit meat in thousand tons"  = "انتاج لحوم الارانب بألف طن";
+"Production of cat meat in thousand tons"  = "انتاج لحوم القطا بألف طن";
+"Egg production in million eggs"  = "انتاج البيض بالمليون بيضة";
+
+"All" = "الكل";
+"Production of honey per ton"  = "إنتاج العسل بالطن";
+"Production of tonnes of leather"  = "إنتاج الجلود بالطن";
+"Production of wool per ton"  = "إنتاج الصوف بالطن";
+
+"All" = "الكل";
+"Production of cow's milk per ton"  = "انتاج لبن الأبقار بالطن";
+"Production of buffalo milk per ton"  = "انتاج لبن الجاموس بالطن";
+"Production of sheep milk per ton"  = "انتاج لبن الأغنام بالطن";
+"Production of goat milk per ton"  = "انتاج لبن الماعز بالطن";
+"Production of camel milk per ton"  = "انتاج لبن الإبل بالطن";
+
+"All" = "الكل";
+"Ton fisheries from marine sources"  = "صايد من المصادر البحرية بالطن";
+"Farms from tonnes of marine sources"  = "مزارع من المصادر البحرية بالطن";
+"Tons of freshwater fisheries per ton"  = "مصايد من مصادر المياه العذبة بالطن";
+"Farms from freshwater sources per ton"  = "مزارع من مصادر المياه العذبة بالطن";
+"Ton algae fisheries"  = "مصايد من الطحالب بالطن";
+"Ton algae farms"  = "مزارع من الطحالب بالطن";
+
+"All" = "الكل";
+"Tractors"  = "جرارات";
+"Combine harvesters"  = "حاصدات";
+"Seeders"  = "باذرات";
+"Insecticide Sprayers"  = "رشاشات مبيدات";
+"Water Pumps"  = "مضخات مياه";
+"Other Supplies"  = "مستلزمات اخرى";
+
+"All" = "الكل";
+"Total pesticide production in terms of quantity per ton"  = "جملة مبيدات الإنتاج النباتي من حيث الكمية بالطن";
+"Total pesticide production in terms of value in million dollars"  = "جملة مبيدات الإنتاج النباتي من حيث القيمة بالمليون دولار";
+"Total veterinary treatments in terms of quantity per ton"  = "جملة العلاجات البيطرية من حيث الكمية بالطن";
+"Total Veterinary Remedies in Million Dollars"  = "جملة العلاجات البيطرية من حيث القيمة بالمليون دولار";
+
+"All" = "الكل";
+"National production of nitrogen fertilizers per ton"  = "الانتاج المحلى من الأسمدة النيتروجينية بالطن";
+"Total nitrogen fertilizer consumption in ton"  = "جملة إستهلاك الأسمدة النيتروجينية بالطنn";
+"National production of phosphate fertilizers per ton"  = "الانتاج المحلى من الأسمدة الفوسفاتية بالطن";
+"Total consumption of phosphate fertilizers in ton"  = "ملة إستهلاك الأسمدة الفوسفاتية بالطن";
+"National production of potash fertilizers per ton"  = "الانتاج المحلى من الأسمدة البوتاسية بالطن";
+"Total consumption of potassium fertilizer in ton"  = "ملة إستهلاك الأسمدة البوتاسية بالطن";
+
+"Hashemite kingdom of Jordan" = "المملكة الأردنية الهاشمية";
+"United Arab Emirates" = "الإِمَارات العربِيَّة المُتَّحِدة";
+"Kingdom of Bahrain" = "مملكة البحرين";
+"Republic of Tunisia" = "الجمهورية التونسية";
+"Republic of Algeria" = "الجمهورية الجزائرية الديمقراطية الشعبية";
+"Republic of Djibouti" = "جمهورية جيبوتي";
+"Kingdom of Saudi Arabia" = "المملكة العربية السعودية";
+"Republic of The Sudan" = "جمهورية السودان";
+"Syrian Arab Republic" = "الجُمهُورِيّةُ العَرَبِيّةُ السُورِيّةُ";
+"Somali Democratic Republic" = "جمهورية الصومال";
+"Republic of Iraq" = "جُمْهُوريَّة العِرَاق";
+"Sultanate of Oman" = "سلطنة عمان";
+"State of Palestine" = "دَوْلَةٌ فلسطين";
+"Qatar" = "دَوْلَةٌ قَطَر";
+"Kuwait" = "دَوْلَةٌ الْكُوَيْت";
+"Republic of Lebanon" = "الجمهوريّة اللبنانيّة";
+"Libya" = "الجماهيرية العربية الليبية";
+"Arab Republic of Egypt" = "جُمهورِيةُ مِصرَ العَرَبيةِ";
+"Kingdom of Morocco" = "المَمْلَكَةُ المَغْرِبِيَّة";
+"Islamic Republic of Mauritania" = "الجمهورية الإسلامية الموريتانية";
+"Republic of Yemen" = "الجُمْهُوْرِيَّةُ اليَمَنِيَّة";
+"Union of the Comoros" = "الاتّحاد القَمَري";
+
+"Arab Maghreb" = "المغرب العربي";
+"Middle" = "الأوسط";
+"Arab Orient" = "المشرق العربي";
+"Arabian Peninsula" = "شبه الجزيرة العربية";
+
+"Staistic on" = " إحصائيات حول";
+
+"adress" = "الإدارة العامة للمنظمة العربية للتنمية الزراعية، شارع رقم 7 العمارات، ص . ب 474 – الخرطوم، جمهورية السودان";
+"phone" = "الهاتف : 472176 183 00249";
+"fax" = "فاكس : 471050 183 00249";
+"General Directorate of the Organization for Agricultural Development" = "الإدارة العامة للمنظمة العربية للتنمية الزراعية";

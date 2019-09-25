@@ -1,0 +1,168 @@
+/* 
+  Localizable.strings
+  AOAD
+
+  Created by Hassine on 05/09/2019.
+  Copyright © 2019 aoad. All rights reserved.
+*/
+"AOAD" = "OADA";
+"Arab Organization for Agricultural Development" = "Organisation Arabe de Développement en Agriculture";
+"back" = "retour";
+"Statistics" = "Statistique";
+"News" = "Actualité";
+"Documents" = "Publications";
+"Networks & DB" = "Réseaux & BD";
+"Date of :" = "Date de :";
+"Date to :" = "Date à :";
+"Validate statistics" = "Valider les Statistiques";
+"Choice of statistical items to compare" = "Choix des champs à comparer";
+
+//SideMenuOptions
+"Favorite list" = "Liste des Favoris";
+"Presentation of the organization" = "Présentation de l'organisation";
+"Who are we?" = "Qui sommes nous?";
+"Organizational chart" = "Organigramme";
+"Member Country" = "Pays Membre";
+"Links" = "Liens";
+"Communication Office" = "Bureau de communication";
+"Departments" = "Ministères";
+"Photos" = "Photos";
+"Videos" = "Videos";
+"Communication" = "communication";
+"Language" = "Langue";
+"Share" = "Partagez";
+"Contact us" = "Contactez nous";
+
+"List of member countries" = "Liste des pays membres";
+
+"All" = "Tous";
+"Population"  = "Population";
+"Rural population"  = "Population rurale";
+"Man power"  = "Main d'œuvre";
+"Agricultural Manpower"  = "Main d'œuvre agricole";
+
+"All" = "Tous";
+"Geographic area"  = "Zone géographique";
+"Total arable land"  = "Total des terres arables";
+"Forest area"  = "Surface forestière<";
+"Grassland"  = "Prairies";
+
+"All" = "Tous";
+"Total Agricultural and Fisheries Loans"  = "Total des prêts à l'agriculture et à la pêche";
+"Total Support to Agriculture and Fisheries Sector"  = "Soutien total au secteur de l'agriculture et de la pêche";
+"Total Subsidies to Agriculture and Fisheries Sector"  = "Total des subventions au secteur de l'agriculture et de la pêche";
+
+"All" = "Tous";
+"Wholesale Exports"  = "Exportations en gros";
+"Agricultural exports"  = "Exportations agricoles";
+"Wholesale Imports"  = "Importations en gros";
+"Agricultural imports"  = "Importations agricoles";
+
+"All" = "Tous";
+"Area of grain"  = "Surface de céréales";
+"Production of Grain"  = "Production de céréales";
+"Tubers area"  = "Zone des tubercules";
+"Production of tubers"  = "Production de tubercules";
+"Sugar Crop Area"  = "Zone de culture du sucre";
+"Production of Sugar Crop"  = "Production de culture de sucre";
+
+"All" = "Tous";
+"Number of cows per thousand head"  = "Nombre de vaches par millier de têtes";
+"Number of Sheep in Thousand Heads"  = "Nombre de moutons sur mille têtes";
+"Goats in 1000 Heads"  = "Nombre de chèvres sur mille têtes";
+"Number of camels per thousand head"  = "Nombre de chameaux par millier de têtes";
+"Number of horses per thousand head"  = "Nombre de chevaux par millier de têtes";
+"Number of mules and donkeys per thousand head"  = "Nombre de mulets et d\'ânes par millier de têtes";
+
+"All" = "Tous";
+"Total red meat production per ton"  = "Production totale de viande rouge par tonne";
+"Production of meat from cattle, cattle and buffalo per ton"  = "Production de viande de bovins, bovins et buffles par tonne";
+"Production of meat from sheep and goats per ton"  = "Production de viande de mouton et de chèvre par tonne";
+"Meat production from camels per ton"  = "Production de viande de chameaux par tonne";
+"Production of viscous meat per ton"  = "Production de viande visqueuse par tonne";
+
+"All" = "Tous";
+"Production of a thousand tons of chicken meat"  = "Production de mille tonnes de viande de poulet";
+"Production of other poultry meat by thousand tons"  = "roduction d'autres viandes de volaille par milliers de tonnes";
+"Production of rabbit meat in thousand tons"  = "Production de viande de lapin en milliers de tonnes";
+"Production of cat meat in thousand tons"  = "Production de viande de chat en milliers de tonnes";
+"Egg production in million eggs"  = "Production d'oeufs en millions d'oeufs";
+
+"All" = "Tous";
+"Production of honey per ton"  = "Production de miel par tonne";
+"Production of tonnes of leather"  = "Production de tonnes de cuir";
+"Production of wool per ton"  = "Production de laine par tonne";
+
+"All" = "Tous";
+"Production of cow's milk per ton"  = "Production de lait de vache par tonne";
+"Production of buffalo milk per ton"  = "Production de lait de bufflonne par tonne";
+"Production of sheep milk per ton"  = "Production de lait de brebis par tonne";
+"Production of goat milk per ton"  = "Production de lait de chèvre par tonne";
+"Production of camel milk per ton"  = "Production de lait de chamelle par tonne";
+
+"All" = "Tous";
+"Ton fisheries from marine sources"  = "tonnes de pêche d'origine marin";
+"Farms from tonnes of marine sources"  = "Fermes provenant de tonnes de sources marines";
+"Tons of freshwater fisheries per ton"  = "Tonnes de pêche en eau douce par tonne";
+"Farms from freshwater sources per ton"  = "Exploitations agricoles provenant de sources d\'eau douce par tonne";
+"Ton algae fisheries"  = "Pêche aux algues en tonnes";
+"Ton algae farms"  = "Ton fermes d'algues";
+
+"All" = "Tous";
+"Tractors"  = "Tracteurs";
+"Combine harvesters"  = "Moissonneuses-batteuses";
+"Seeders"  = "Semoirs";
+"Insecticide Sprayers"  = "Pulvérisateurs d'insecticides";
+"Water Pumps"  = "Pompes à eau";
+"Other Supplies"  = "Autres fournitures";
+
+"All" = "Tous";
+"Total pesticide production in terms of quantity per ton"  = "Production totale de pesticides en quantité par tonne";
+"Total pesticide production in terms of value in million dollars"  = "Production totale de pesticides en valeur en millions de dollars";
+"Total veterinary treatments in terms of quantity per ton"  = "Total des traitements vétérinaires en quantité par tonne";
+"Total Veterinary Remedies in Million Dollars"  = "Total des remèdes vétérinaires en millions de dollars";
+
+"All" = "Tous";
+"National production of nitrogen fertilizers per ton"  = "Production nationale d'engrais azotés par tonne";
+"Total nitrogen fertilizer consumption in ton"  = "Consommation totale d'engrais azoté en tonnes";
+"National production of phosphate fertilizers per ton"  = "Production nationale d'engrais phosphatés par tonne";
+"Total consumption of phosphate fertilizers in ton"  = "Consommation totale d'engrais phosphatés en tonnes";
+"National production of potash fertilizers per ton"  = "Production nationale d'engrais potassiques par tonne";
+"Total consumption of potassium fertilizer in ton"  = "Consommation totale d'engrais de potassium en tonnes";
+
+"Hashemite kingdom of Jordan" = "Royaume hachémite de Jordanie";
+"United Arab Emirates" = "Émirats arabes unis";
+"Kingdom of Bahrain" = "Royaume de Bahreïn";
+"Republic of Tunisia" = "République Tunisienne";
+"Republic of Algeria" = "République Algérienne";
+"Republic of Djibouti" = "République de Djibouti";
+"Kingdom of Saudi Arabia" = "Royaume Arabie Saoudite";
+"Republic of The Sudan" = "République du Soudan";
+"Syrian Arab Republic" = "République arabe syrienne";
+"Somali Democratic Republic" = "République démocratique somalienne";
+"Republic of Iraq" = "République Irakienne";
+"Sultanate of Oman" = "Sultanat Oman";
+"State of Palestine" = "Etat de Palestine";
+"Qatar" = "Qatar";
+"Kuwait" = "Koweït";
+"Republic of Lebanon" = "République du Liban";
+"Libya" = "Libye";
+"Arab Republic of Egypt" = "République arabe Égypte";
+"Kingdom of Morocco" = "Royaume du Maroc";
+"Islamic Republic of Mauritania" = "République islamique de Mauritanie";
+"Republic of Yemen" = "République du Yémen";
+"Union of the Comoros" = "Union des Comores";
+
+"Arab Maghreb" = "Maghreb Arabe";
+"Middle" = "Milieu";
+"Arab Orient" = "Orient Arabe";
+"Arabian Peninsula" = "Péninsule Arabique";
+
+"Staistic on" = "Staistiques sur";
+
+"adress" = "Organisation arabe pour le développement agricole (OADA) Box 474, Khartoum, République du Soudan";
+"phone" = "Téléphone:  00249183472176";
+"fax" = "Fax: 00249 183471050";
+"General Directorate of the Organization for Agricultural Development" = "Direction générale de l'Organisation de développement agricole";
+
+
