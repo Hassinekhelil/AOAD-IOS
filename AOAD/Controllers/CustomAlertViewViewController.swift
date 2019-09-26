@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwitchLanguage
 
 class CustomAlertViewViewController: UIViewController {
 
@@ -14,6 +15,8 @@ class CustomAlertViewViewController: UIViewController {
     @IBOutlet weak var arabicCheckBox: CheckBox!
     @IBOutlet weak var frenchCheckBox: CheckBox!
     @IBOutlet weak var englishCheckBox: CheckBox!
+    
+    var nav:UINavigationController?
     
     let alertViewGrayColor = UIColor(red: 224.0/255.0, green: 224.0/255.0, blue: 224.0/255.0, alpha: 1)
     var selected_lang:String = ""
@@ -74,7 +77,12 @@ class CustomAlertViewViewController: UIViewController {
         }
     }
     @IBAction func valid(_ sender: UIButton) {
+        Language.setCurrentLanguage(selected_lang)
         self.dismiss(animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "splashVC") as! SplashScreenViewController
+        vc.toMain = true
+        self.nav?.pushViewController(vc, animated: true)
     }
     
     /*

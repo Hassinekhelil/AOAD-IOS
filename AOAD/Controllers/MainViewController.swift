@@ -21,6 +21,10 @@ class MainViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+    
+        
+        
         if Language.getCurrentLanguage() == "ar" {
             self.navigationController?.navigationBar.semanticContentAttribute = .forceRightToLeft
             self.navigationController?.view.semanticContentAttribute = .forceRightToLeft
@@ -102,6 +106,13 @@ class MainViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
     }
 
     @IBAction func changeLanguage(_ sender: UIBarButtonItem) {
+        let customAlert = self.storyboard?.instantiateViewController(withIdentifier: "CustomAlertID") as! CustomAlertViewViewController
+        customAlert.providesPresentationContextTransitionStyle = true
+        customAlert.definesPresentationContext = true
+        customAlert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        customAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        customAlert.nav = self.navigationController
+        self.present(customAlert, animated: true, completion: nil)
     }
     @IBAction func openSideMenu(_ sender: UIBarButtonItem) {
         if Language.getCurrentLanguage() == "ar" {
@@ -189,6 +200,7 @@ extension MainViewController: SideMenuDelegate {
             customAlert.definesPresentationContext = true
             customAlert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             customAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+            customAlert.nav = self.navigationController
             self.present(customAlert, animated: true, completion: nil)
             break
         case "option9":

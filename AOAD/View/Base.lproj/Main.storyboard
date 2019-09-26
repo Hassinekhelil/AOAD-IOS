@@ -548,8 +548,8 @@
         <!--Splash Screen View Controller-->
         <scene sceneID="vFb-f7-WE5">
             <objects>
-                <viewController id="bG5-K7-zCn" customClass="SplashScreenViewController" customModule="AOAD" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Sn5-KA-SzU">
+                <viewController storyboardIdentifier="splashVC" id="bG5-K7-zCn" customClass="SplashScreenViewController" customModule="AOAD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" hidden="YES" contentMode="scaleToFill" id="Sn5-KA-SzU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -633,6 +633,7 @@
                     <navigationItem key="navigationItem" id="jcV-nk-sU4"/>
                     <connections>
                         <outlet property="arabicBtn" destination="SRb-OV-sjH" id="xoc-aq-5zh"/>
+                        <outlet property="container" destination="Sn5-KA-SzU" id="qN4-Jt-ss2"/>
                         <outlet property="englishBtn" destination="H7F-qY-zo9" id="RQJ-lM-IN7"/>
                         <outlet property="frenchBtn" destination="YgA-lS-lcL" id="KeF-Xb-FF5"/>
                         <segue destination="ttK-FG-ESR" kind="show" identifier="selectLanguageSegue" id="B8P-va-SLT"/>
@@ -757,7 +758,7 @@
                                                             <action selector="englishChoosed:" destination="70L-VP-5Zp" eventType="touchUpInside" id="apo-5l-yv9"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vNW-qs-EWV">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="english" translatesAutoresizingMaskIntoConstraints="NO" id="vNW-qs-EWV">
                                                         <rect key="frame" x="44" y="45" width="30" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="30" id="LQO-gd-t8a"/>
@@ -2299,6 +2300,7 @@
         <image name="communication_office" width="32" height="32"/>
         <image name="contact_us" width="32" height="32"/>
         <image name="departments" width="32" height="32"/>
+        <image name="english" width="460" height="307"/>
         <image name="explore" width="32" height="32"/>
         <image name="favoris" width="32" height="32"/>
         <image name="favoris_selected" width="32" height="32"/>

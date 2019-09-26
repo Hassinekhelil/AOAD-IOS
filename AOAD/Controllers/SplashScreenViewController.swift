@@ -14,6 +14,9 @@ class SplashScreenViewController: UIViewController {
     @IBOutlet weak var arabicBtn: UIButton!
     @IBOutlet weak var englishBtn: UIButton!
     @IBOutlet weak var frenchBtn: UIButton!
+    @IBOutlet var container: UIView!
+    
+    var toMain = false
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +28,13 @@ class SplashScreenViewController: UIViewController {
         
         frenchBtn.layer.cornerRadius = 10
         frenchBtn.clipsToBounds = true
+        
+        if toMain {
+            let containerViewController = ContainerViewController()
+            self.navigationController?.pushViewController(containerViewController, animated: true)
+        }else {
+            container.isHidden = false
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
