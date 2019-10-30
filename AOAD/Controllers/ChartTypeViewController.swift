@@ -22,16 +22,6 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
     var selected_chart:String = "pie"
     var selected_table:String = ""
     var selected_title:[String] = []
-
-//
-//    @IBOutlet weak var barChartCheckBox: CheckBox!
-//    @IBOutlet weak var lineChartCheckBox: CheckBox!
-//    @IBOutlet weak var areaChartCheckBox: CheckBox!
-//    @IBOutlet weak var stackedChartCheckBox: CheckBox!
-//    @IBOutlet weak var polarChartCheckBox: CheckBox!
-//    @IBOutlet weak var pieChartCheckBox: CheckBox!
-//    @IBOutlet weak var mikkoChartCheckBox: CheckBox!
-    
     
     var chartNumber:Int = 0
     @IBOutlet weak var prevBtn: UIImageView!
@@ -53,27 +43,6 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
         prevBtn.isHidden = true
         
         checkListTitle.text = "Choice of statistical items to compare".localized(using: "Localizable")
-        
-//        barChartCheckBox.style = .tick
-//        barChartCheckBox.borderStyle = .square
-//        
-//        lineChartCheckBox.style = .tick
-//        lineChartCheckBox.borderStyle = .square
-//        
-//        areaChartCheckBox.style = .tick
-//        areaChartCheckBox.borderStyle = .square
-//        
-//        stackedChartCheckBox.style = .tick
-//        stackedChartCheckBox.borderStyle = .square
-//        
-//        polarChartCheckBox.style = .tick
-//        polarChartCheckBox.borderStyle = .square
-//        
-//        pieChartCheckBox.style = .tick
-//        pieChartCheckBox.borderStyle = .square
-//        
-//        mikkoChartCheckBox.style = .tick
-//        mikkoChartCheckBox.borderStyle = .square
         
         switch choice {
         case "السكان والقوى العاملة", "Population and labor force", "Population et force de travail":
@@ -156,6 +125,13 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
             break
         }
     }
+    @IBAction func validate(_ sender: UIButton) {
+        if selected_item.count == 0 && selected_item2.count == 0 {
+            
+        }else {
+            performSegue(withIdentifier: "charSettingsSegue", sender: nil)
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return selected_tab.count
@@ -195,9 +171,6 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
                 selected_title.remove(at: selected_title.firstIndex(of: selected_tab[indexPath.row])!)
 
                 switch choice {
-//                case "السكان والقوى العاملة", "Population and labor force", "Population et force de travail", "الرقعة الأرضية والزراعية والمراعي والغابات", "Agricultural land and grasslands and forests", "Terres agricoles prairies et forêts", "التمويل الزراعي والسمكي", "Agricultural and fisheries finance", "Financement agricole et de la pêche",  "الميزان التجاري السلعي الكلى والزراعى والغذائى", "Total trade balance of agricultural and food commodities", "Balance commerciale totale de produits agricoles et alimentaires", "الانتاج الداجني", "Poultry production", "Production de volaille", "انتاج اللبن", "Milk production", "Production de lait", "الانتاج السمكي", "Fish production", "Production de poisson", "اعداد الآلات الزراعية", "Preparation of agricultural machinery", "Préparation de machines agricoles" :
-//                    selected_item.remove(at: selected_item.firstIndex(of: item_tab[indexPath.row-1])!)
-//                    break
                 case "الإنتاج النباتي  الحبوب والدرنات والمحاصيل السكرية", "Plant production: cereals and tubers and sugar crops", "Production végétale: céréales et tubercules et cultures sucrières", "توزيع اعداد الحيوانات وفقا للانواع ", "Distribution of animals according to species", "Répartition des animaux selon les espèces", "انتاج اللحوم الحمراء", "Production of red meat", "Production de viande rouge", "منتجات حيوانية أخرى", "Other animal products", "Autres produits origine animale", "المبيدات والعلاجات البيطرية المستخدمة", "Pesticides and veterinary treatments used", "Pesticides et traitements vétérinaires utilisés", "كمية الأسمدة الكيماوية المنتجة والمستهلكة", "Quantity of chemical fertilizers produced and consumed", "Quantité engrais chimiques produits et consommés":
                     selected_item2.remove(at: selected_item.firstIndex(of: item_tab2[indexPath.row-1])!)
                     break
@@ -209,9 +182,6 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
                 selected_item.append(item_tab[indexPath.row-1])
                 selected_title.append(selected_tab[indexPath.row])
                 switch choice {
-//                case "السكان والقوى العاملة", "Population and labor force", "Population et force de travail", "الرقعة الأرضية والزراعية والمراعي والغابات", "Agricultural land and grasslands and forests", "Terres agricoles prairies et forêts", "التمويل الزراعي والسمكي", "Agricultural and fisheries finance", "Financement agricole et de la pêche",  "الميزان التجاري السلعي الكلى والزراعى والغذائى", "Total trade balance of agricultural and food commodities", "Balance commerciale totale de produits agricoles et alimentaires", "الانتاج الداجني", "Poultry production", "Production de volaille", "انتاج اللبن", "Milk production", "Production de lait", "الانتاج السمكي", "Fish production", "Production de poisson", "اعداد الآلات الزراعية", "Preparation of agricultural machinery", "Préparation de machines agricoles" :
-//                    selected_item.append(item_tab[indexPath.row-1])
-//                    break
                 case "الإنتاج النباتي  الحبوب والدرنات والمحاصيل السكرية", "Plant production: cereals and tubers and sugar crops", "Production végétale: céréales et tubercules et cultures sucrières", "توزيع اعداد الحيوانات وفقا للانواع ", "Distribution of animals according to species", "Répartition des animaux selon les espèces", "انتاج اللحوم الحمراء", "Production of red meat", "Production de viande rouge", "منتجات حيوانية أخرى", "Other animal products", "Autres produits origine animale", "المبيدات والعلاجات البيطرية المستخدمة", "Pesticides and veterinary treatments used", "Pesticides et traitements vétérinaires utilisés", "كمية الأسمدة الكيماوية المنتجة والمستهلكة", "Quantity of chemical fertilizers produced and consumed", "Quantité engrais chimiques produits et consommés":
                     selected_item2.append(item_tab2[indexPath.row-1])
                     break
@@ -235,23 +205,23 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
             chartImage.image = UIImage(named: "line")
             chartNumber += 1
             break
+//        case 2:
+//            selected_chart = "bar"
+//            chartImage.image = UIImage(named: "bar")
+//            chartNumber += 1
+//            break
+//        case 3:
+//            selected_chart = ""
+//            chartImage.image = UIImage(named: "polar")
+//            chartNumber += 1
+//            break
+//        case 4:
+//            selected_chart = ""
+//            chartImage.image = UIImage(named: "stacked")
+//            chartNumber += 1
+//            break
         case 2:
-            selected_chart = "bar"
-            chartImage.image = UIImage(named: "bar")
-            chartNumber += 1
-            break
-        case 3:
-            selected_chart = ""
-            chartImage.image = UIImage(named: "polar")
-            chartNumber += 1
-            break
-        case 4:
-            selected_chart = ""
-            chartImage.image = UIImage(named: "stacked")
-            chartNumber += 1
-            break
-        case 5:
-            selected_chart = ""
+            selected_chart = "mikko"
             chartImage.image = UIImage(named: "mikko")
             chartNumber += 1
             nextBtn.isHidden = true
@@ -288,134 +258,29 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
             selected_chart = "line"
             chartImage.image = UIImage(named: "line")
             chartNumber -= 1
-            break
-        case 4:
-            selected_chart = ""
-            chartImage.image = UIImage(named: "bar")
-            chartNumber -= 1
-            break
-        case 5:
-            selected_chart = ""
-            chartImage.image = UIImage(named: "polar")
-            chartNumber -= 1
-            break
-        case 6:
-            selected_chart = ""
-            chartImage.image = UIImage(named: "stacked")
-            chartNumber -= 1
             nextBtn.isHidden = false
             break
+//        case 4:
+//            selected_chart = ""
+//            chartImage.image = UIImage(named: "bar")
+//            chartNumber -= 1
+//            break
+//        case 5:
+//            selected_chart = ""
+//            chartImage.image = UIImage(named: "polar")
+//            chartNumber -= 1
+//            break
+//        case 6:
+//            selected_chart = ""
+//            chartImage.image = UIImage(named: "stacked")
+//            chartNumber -= 1
+//            nextBtn.isHidden = false
+//            break
         default:
             break
         }
         print(selected_chart)
     }
-
-//    @IBAction func barChartButtonCLick(_ sender: UIButton) {
-//        if barChartCheckBox.isChecked == true {
-//            barChartCheckBox.isChecked = false
-//            selected_chart = ""
-//        }else {
-//            barChartCheckBox.isChecked = true
-//            lineChartCheckBox.isChecked = false
-//            areaChartCheckBox.isChecked = false
-//            stackedChartCheckBox.isChecked = false
-//            polarChartCheckBox.isChecked = false
-//            pieChartCheckBox.isChecked = false
-//            mikkoChartCheckBox.isChecked = false
-//            selected_chart = "bar"
-//        }
-//    }
-//    @IBAction func lineChartButtonClick(_ sender: UIButton) {
-//        if lineChartCheckBox.isChecked == true {
-//            lineChartCheckBox.isChecked = false
-//            selected_chart = ""
-//        }else {
-//            lineChartCheckBox.isChecked = true
-//            barChartCheckBox.isChecked = false
-//            areaChartCheckBox.isChecked = false
-//            stackedChartCheckBox.isChecked = false
-//            polarChartCheckBox.isChecked = false
-//            pieChartCheckBox.isChecked = false
-//            mikkoChartCheckBox.isChecked = false
-//            selected_chart = "line"
-//        }
-//    }
-//    @IBAction func areaChartButtonCLick(_ sender: UIButton) {
-//        if areaChartCheckBox.isChecked == true {
-//            areaChartCheckBox.isChecked = false
-//            selected_chart = ""
-//        }else {
-//            areaChartCheckBox.isChecked = true
-//            lineChartCheckBox.isChecked = false
-//            barChartCheckBox.isChecked = false
-//            stackedChartCheckBox.isChecked = false
-//            polarChartCheckBox.isChecked = false
-//            pieChartCheckBox.isChecked = false
-//            mikkoChartCheckBox.isChecked = false
-//            selected_chart = "area"
-//        }
-//    }
-//    @IBAction func stackedChartButtonClick(_ sender: UIButton) {
-//        if stackedChartCheckBox.isChecked == true {
-//            stackedChartCheckBox.isChecked = false
-//            selected_chart = ""
-//        }else {
-//            stackedChartCheckBox.isChecked = true
-//            lineChartCheckBox.isChecked = false
-//            areaChartCheckBox.isChecked = false
-//            barChartCheckBox.isChecked = false
-//            polarChartCheckBox.isChecked = false
-//            pieChartCheckBox.isChecked = false
-//            mikkoChartCheckBox.isChecked = false
-//            selected_chart = "stacked"
-//        }
-//    }
-//    @IBAction func polarChartButtonClick(_ sender: UIButton) {
-//        if polarChartCheckBox.isChecked == true {
-//            polarChartCheckBox.isChecked = false
-//            selected_chart = ""
-//        }else {
-//            polarChartCheckBox.isChecked = true
-//            lineChartCheckBox.isChecked = false
-//            areaChartCheckBox.isChecked = false
-//            stackedChartCheckBox.isChecked = false
-//            barChartCheckBox.isChecked = false
-//            pieChartCheckBox.isChecked = false
-//            mikkoChartCheckBox.isChecked = false
-//            selected_chart = "polar"
-//        }
-//    }
-//    @IBAction func pieChartButtonClick(_ sender: UIButton) {
-//        if pieChartCheckBox.isChecked == true {
-//            pieChartCheckBox.isChecked = false
-//            selected_chart = ""
-//        }else {
-//            pieChartCheckBox.isChecked = true
-//            lineChartCheckBox.isChecked = false
-//            areaChartCheckBox.isChecked = false
-//            stackedChartCheckBox.isChecked = false
-//            polarChartCheckBox.isChecked = false
-//            barChartCheckBox.isChecked = false
-//            mikkoChartCheckBox.isChecked = false
-//            selected_chart = "pie"
-//        }
-//    }
-//    @IBAction func mikkoChartButtonClick(_ sender: UIButton) {
-//        if mikkoChartCheckBox.isChecked == true {
-//            mikkoChartCheckBox.isChecked = false
-//            selected_chart = ""
-//        }else {
-//            mikkoChartCheckBox.isChecked = true
-//            lineChartCheckBox.isChecked = false
-//            areaChartCheckBox.isChecked = false
-//            stackedChartCheckBox.isChecked = false
-//            polarChartCheckBox.isChecked = false
-//            pieChartCheckBox.isChecked = false
-//            barChartCheckBox.isChecked = false
-//            selected_chart = "mikko"
-//        }
-//    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "charSettingsSegue" {

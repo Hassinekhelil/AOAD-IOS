@@ -94,6 +94,13 @@ class ChartSettingsViewController: UIViewController, UIStepperControllerDelegate
         countriesTableView.reloadData()
         selected_countries.removeAll()
     }
+    @IBAction func validate(_ sender: UIButton) {
+        if selected_countries.count == 0 {
+            
+        }else {
+            performSegue(withIdentifier: "viewChartSegue", sender: nil)
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if countryCheckBox.isChecked == true {
@@ -126,23 +133,27 @@ class ChartSettingsViewController: UIViewController, UIStepperControllerDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let checkbox = tableView.cellForRow(at: indexPath)?.contentView.viewWithTag(301) as! CheckBox
         if countryCheckBox.isChecked == true {
-            if checkbox.isChecked == true {
-                checkbox.isChecked = false
-                selected_countries.remove(at: selected_countries.firstIndex(of: Constants.countries_item[indexPath.row])!)
-            }else {
-                checkbox.isChecked = true
-                selected_countries.append(Constants.countries_item[indexPath.row])
-            }
+                if checkbox.isChecked == true {
+                    checkbox.isChecked = false
+                    selected_countries.remove(at: selected_countries.firstIndex(of: Constants.countries_item[indexPath.row])!)
+                }else {
+                    if selected_countries.count < 4 {
+                        checkbox.isChecked = true
+                        selected_countries.append(Constants.countries_item[indexPath.row])
+                    }
+                }
         }else {
+        
             if checkbox.isChecked == true {
                 checkbox.isChecked = false
                 selected_countries.remove(at: selected_countries.firstIndex(of: Constants.regions_item[indexPath.row])!)
             }else {
-                checkbox.isChecked = true
-                selected_countries.append(Constants.regions_item[indexPath.row])
+                if selected_countries.count < 4 {
+                    checkbox.isChecked = true
+                    selected_countries.append(Constants.regions_item[indexPath.row])
+                }
             }
         }
-        print(selected_countries)
     }
     
    

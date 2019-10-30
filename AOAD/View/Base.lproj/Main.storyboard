@@ -1247,7 +1247,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Edr-6n-BMd" kind="show" identifier="charSettingsSegue" id="CRl-4F-ebC"/>
+                                            <action selector="validate:" destination="04k-tw-RIr" eventType="touchUpInside" id="Eur-Iq-OdW"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Yj-jr-rTP">
@@ -1340,6 +1340,7 @@
                         <outlet property="checkListTitle" destination="Eix-gj-bVS" id="kuv-sq-4Ld"/>
                         <outlet property="nextBtn" destination="ina-sP-ac2" id="LYY-FJ-zCv"/>
                         <outlet property="prevBtn" destination="5Qd-9Q-sQx" id="vcg-Uq-vZh"/>
+                        <segue destination="Edr-6n-BMd" kind="show" identifier="charSettingsSegue" id="y1R-ZO-e02"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISg-qd-iMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1502,7 +1503,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="dBo-UG-b2C" kind="show" identifier="viewChartSegue" id="vew-Ll-pzU"/>
+                                            <action selector="validate:" destination="Edr-6n-BMd" eventType="touchUpInside" id="tdX-Ux-0Pv"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grF-Hg-a9A">
@@ -1703,6 +1704,7 @@
                         <outlet property="regionsCheckBox" destination="5zv-UE-FIk" id="5pC-Bz-SbN"/>
                         <outlet property="yearFromStepper" destination="TkJ-fG-c2w" id="yAs-Ww-fjD"/>
                         <outlet property="yearToStepper" destination="jeb-ZL-QYD" id="yx0-dX-EFn"/>
+                        <segue destination="dBo-UG-b2C" kind="show" identifier="viewChartSegue" id="J6O-lu-qUF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xjr-iz-MjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>

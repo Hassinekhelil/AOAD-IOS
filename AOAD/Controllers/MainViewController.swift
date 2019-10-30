@@ -21,10 +21,6 @@ class MainViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-    
-        
-        
         if Language.getCurrentLanguage() == "ar" {
             self.navigationController?.navigationBar.semanticContentAttribute = .forceRightToLeft
             self.navigationController?.view.semanticContentAttribute = .forceRightToLeft

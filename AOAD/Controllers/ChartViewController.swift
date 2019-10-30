@@ -27,10 +27,7 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var container: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
@@ -41,7 +38,6 @@ class ChartViewController: UIViewController {
         width = Int(container.frame.width)
         
         getStatisticData()
-        
     }
     
     func drawPieChart(years: [String], values: [Double], title: String)  -> anychart.core.Chart{
@@ -115,7 +111,7 @@ class ChartViewController: UIViewController {
         series.markers().zIndex(zIndex: 100)
         
         if selected_countries.count > 1 {
-            for index in 1..<selected_countries.capacity {
+            for index in 1..<selected_countries.capacity-1 {
                 let seriesData = set.mapAs(mapping: "{x:'x', value: 'value"+String(index)+"'}")
                 let series = chart.area(data: seriesData)
                 series.name(name: selected_countries[index])
@@ -223,6 +219,52 @@ class ChartViewController: UIViewController {
         return chart
     }
     
+    
+    func drawMikkoChart(years: [String], values: [Double], values1: [Double], values2: [Double], values3: [Double], title: String)  -> anychart.core.Chart {
+        let chart = AnyChart.mekko()
+        var data: Array<DataEntry> = []
+
+        for index in 0..<years.count {
+            switch (selected_countries.count){
+            case 1:
+                data.append(ValueDataEntry(x: years[index], value: values[index]))
+                break
+            case 2:
+                data.append(CustomDataEntry(x: years[index], value: values[index], value2: values1[index]))
+                break
+            case 3:
+                data.append(CustomDataEntry(x: years[index], value: values[index], value2: values1[index], value3: values2[index]))
+                break
+            case 4:
+                data.append(CustomDataEntry(x: years[index], value: values[index], value2: values1[index], value3: values2[index], value4: values3[index]))
+                break
+            default:
+                break
+            }
+        }
+        let set = anychart.data.Set().instantiate()
+        set.data(data: data)
+        let seriesMapping = set.mapAs(mapping: "{x:'x', value: 'value'}")
+        chart.mekko(data: seriesMapping).name(name: selected_countries[0])
+
+
+        if selected_countries.count > 1 {
+            for index in 1..<selected_countries.count {
+                let seriesMapping = set.mapAs(mapping: "{x:'x', value: 'value"+String(index+1)+"'}")
+                chart.mekko(data: seriesMapping).name(name:selected_countries[index])
+
+            }
+        }
+
+        chart.xAxis(index: 0).orientation(orientation: anychart.enums.Orientation.TOP)
+
+        chart.labels().format(token: "${%Value}k")
+
+        chart.tooltip().format(format: "{%seriesName}: ${%Value}k")
+    
+        return chart
+    }
+    
     class CustomDataEntry: ValueDataEntry {
         init(x: String, value: Double, value2: Double) {
             super.init(x: x, value: value)
@@ -240,62 +282,6 @@ class ChartViewController: UIViewController {
             setValue(key: "value4", value: value4)
         }
     }
-    
-//    func getStatisticData() {
-//        for country in self.selected_countries {
-//            let params = [
-//                "options": self.selected_item,
-//                "table": self.selected_table,
-//                "year_from": self.selected_year_from,
-//                "year_to": self.selected_year_to,
-//                "country": country
-//                ] as [String : Any]
-//
-//            NetworkManager.getStatisticData(param: params as NSDictionary) { (error, data)  in
-//                let json = JSON(data)
-//                let array = json["item"]
-//                var years = [String]()
-//                var values = [Double]()
-//                if self.selected_item2.count > 0 {
-//                    var cmp:Int = 0
-//                    for item in self.selected_item2 {
-//                        for index in 0..<array.count {
-//                            let dic:[String : Any] = array[index].dictionary!
-//                        years.append(String(describing:dic["annee"]!))
-//                            values.append(Double(String(describing:dic[item]!)) as! Double)
-//                        }
-//                        let chart = Chart(title: self.selected_title[self.selected_item.firstIndex(of: item)!], years: years, values: values, values1: [], values2: [], values3: [], values4: [])
-//                        self.chart_list.append(chart)
-//                        let anyChartView = AnyChartView()
-//                        anyChartView.setChart(chart: self.drawPieChart(years: years, values: values, title: self.selected_title[self.selected_item2.firstIndex(of: item)!]))
-//                        anyChartView.frame = CGRect(x: 0, y: cmp*500, width: self.width-20, height: 500)
-//                        anyChartView.isUserInteractionEnabled = false
-//                        self.container.addSubview(anyChartView)
-//                        cmp += 1
-//                    }
-//                    self.container.contentSize.height = CGFloat(self.selected_item.count*500)
-//                }else {
-//                    var cmp:Int = 0
-//                    for item in self.selected_item {
-//                        years.removeAll()
-//                        values.removeAll()
-//                        for index in 0..<array.count {
-//                            let dic:[String : Any] = array[index].dictionary!
-//                            years.append(String(describing:dic["annee"]!))
-//                            values.append(Double(String(describing:dic[item]!)) as! Double)
-//                        }
-//                        let anyChartView = AnyChartView()
-//                        anyChartView.setChart(chart: self.drawPieChart(years: years, values: values, title: self.selected_title[self.selected_item.firstIndex(of: item)!]))
-//                        anyChartView.frame = CGRect(x: 0, y: cmp*500, width: self.width-20, height: 500)
-//                        anyChartView.isUserInteractionEnabled = false
-//                        self.container.addSubview(anyChartView)
-//                        cmp += 1
-//                    }
-//                    self.container.contentSize.height = CGFloat(self.selected_item.count*500)
-//                }
-//            }
-//        }
-//    }
     
     func getStatisticData() {
         var cmp:Int = 0
@@ -376,6 +362,8 @@ class ChartViewController: UIViewController {
                                 break
                             case "line":
                                  anyChartView.setChart(chart: self.drawLineChart(years: years, values: values, values1: values2, values2: values3, values3: values4, title: self.selected_title[self.selected_item.firstIndex(of: item)!]))
+//                            case "mikko":
+//                                anyChartView.setChart(chart: self.drawMikkoChart(years: years, values: values, values1: values2, values2: values3, values3: values4, title: self.selected_title[self.selected_item.firstIndex(of: item)!]))
                             default:
                                 break
                             }
@@ -392,70 +380,4 @@ class ChartViewController: UIViewController {
         }
         
     }
-
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    //    func drawColomunChart() {
-    //        let chart = AnyChart.column()
-    //
-    //        //        {"item":[{"annee":"2015","pop_mas_y":"90.000","pop_rurale_mas_y":"60.000"},{"annee":"2016","pop_mas_y":"400.900","pop_rurale_mas_y":"900.000"},{"annee":"2017","pop_mas_y":"210.440","pop_rurale_mas_y":"1000.000"},{"annee":"2018","pop_mas_y":"520.000","pop_rurale_mas_y":"900.000"}]}
-    //        let data: Array<DataEntry> = [
-    //            CustomDataEntry(x: "2015", value: 90.000, value2:60.000),
-    //            CustomDataEntry(x: "2016", value: 400.900, value2:60.000),
-    //            CustomDataEntry(x: "2017", value: 210.440, value2:60.000),
-    //            CustomDataEntry(x: "2018", value: 520.000, value2:60.000)
-    //        ]
-    //
-    //        let column = chart.column(data: data)
-    //
-    //        //column.addTarget(target: self, action: #selector(hell), fields: ["x", "value"])
-    //
-    //        column.tooltip()
-    //            .titleFormat(format: "{%X}")
-    //            .position(position: anychart.enums.Position.CENTER_BOTTOM)
-    //            .anchor(anchor: anychart.enums.Anchor.CENTER_BOTTOM)
-    //            .offsetX(offset: 0)
-    //            .offsetY(offset: 5)
-    //            .format(format: "${%Value}{groupsSeparator: }")
-    //
-    //        chart.animation(settings: true)
-    //        chart.title(settings: "Top 10 Cosmetic Products by Revenue")
-    //
-    //        chart.yScale().minimum(minimum: 0)
-    //
-    //        chart.yAxis(index: 0).labels().format(token: "${%Value}{groupsSeparator: }")
-    //
-    //        chart.tooltip().positionMode(mode: anychart.enums.TooltipPositionMode.POINT)
-    //        chart.interactivity().hoverMode(mode: anychart.enums.HoverMode.BY_X)
-    //
-    //        chart.xAxis(index: 0).title(settings: "Product")
-    //        chart.yAxis(index: 0).title(settings: "Revenue")
-    //
-    //        chartView.setChart(chart: chart)
-    //    }
-    //
-    //    @objc func hell(event: NSDictionary) {
-    //        //print(event["x"]!)
-    //        //print(event["value"]!)
-    //    }
-    //
-    //    class CustomDataEntry: ValueDataEntry {
-    //        init(x: String, value: Double, value2: Double) {
-    //            super.init(x: x, value: value)
-    //            setValue(key: "value2", value: value2)
-    //        }
-    //    }
-
-    
 }
