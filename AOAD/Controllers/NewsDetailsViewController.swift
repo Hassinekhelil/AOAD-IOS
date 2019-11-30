@@ -49,6 +49,17 @@ class NewsDetailsViewController: UIViewController {
         newsContent.loadHTMLString(news!.content, baseURL: nil)
     }
     
+    
+    @IBAction func shareToSocialMedia(_ sender: UIButton) {
+        if let name = URL(string: news!.link), !name.absoluteString.isEmpty {
+            let objectsToShare = [name]
+            let activityViewController = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
+            self.present(activityViewController, animated: true, completion: nil)
+        }
+    }
+    
     @objc func addNewsToFavorites() {
         let fav_btn = UIBarButtonItem(image: UIImage(named: "favoris_selected"), style: .plain, target: self, action: #selector(deleteNewsFromFavorites))
         self.navigationItem.rightBarButtonItem  = fav_btn

@@ -13,7 +13,6 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
     @IBOutlet weak var checkListTableView: UITableView!
     @IBOutlet weak var checkListTitle: UILabel!
     var choice:String = ""
-    var state:[Bool] = [false,false,false,false,false]
     var selected_tab:[String] = []
     var item_tab:[String] = []
     var item_tab2:[String] = []
@@ -22,28 +21,28 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
     var selected_chart:String = "pie"
     var selected_table:String = ""
     var selected_title:[String] = []
+    var item_list:[Item] = []
     
     var chartNumber:Int = 0
     @IBOutlet weak var prevBtn: UIImageView!
     @IBOutlet weak var nextBtn: UIImageView!
     @IBOutlet weak var chartImage: UIImageView!
- 
+    @IBOutlet weak var validateBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
         
-        self.title = choice
-        
-        prevBtn.isHidden = true
-        
+        validateBtn.setTitle("Validate statistics".localized(using: "Localizable"), for: .normal)
         checkListTitle.text = "Choice of statistical items to compare".localized(using: "Localizable")
-        
+        self.title = choice
+        prevBtn.isHidden = true
+            
         switch choice {
         case "السكان والقوى العاملة", "Population and labor force", "Population et force de travail":
             selected_tab = Constants.population_lib
@@ -65,13 +64,13 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
             item_tab = Constants.balance_lib_item
             selected_table = "balance_agric_tab13"
             break
-        case "الإنتاج النباتي  الحبوب والدرنات والمحاصيل السكرية", "Plant production: cereals and tubers and sugar crops", "Production végétale: céréales et tubercules et cultures sucrières":
+        case "الإنتاج النباتي : الحبوب والدرنات والمحاصيل السكرية", "Plant production: cereals and tubers and sugar crops", "Production végétale: céréales et tubercules et cultures sucrières":
             selected_tab = Constants.prodcer_lib
             item_tab = Constants.prodcer_lib_item
             item_tab2 = Constants.prodcer_lib_item2
             selected_table = "cereales_tab91"
             break
-        case  "توزيع اعداد الحيوانات وفقا للانواع ", "Distribution of animals according to species", "Répartition des animaux selon les espèces":
+        case  "توزيع اعداد الحيوانات وفقا للانواع ", "Distribution of animals according to species", "Répartition des animaux selon les espèces", " توزيع اعداد الحيوانات وفقا للانواع":
             selected_tab = Constants.viande_qte_lib
             item_tab = Constants.viande_qte_lib_item
             item_tab2 = Constants.viande_qte_lib_item2
@@ -121,20 +120,43 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
             item_tab2 = Constants.pesticide_prodconsom_lib_item2
             selected_table = "engrais_tab122"
             break
+        case "كمية وقيمة الواردات الوطنية من الاسمدة الازوتية والفوسفاتية والبوتاسية", "Quantity and value of national imports of nitrogen and phosphate and potash fertilizers", "Quantité et valeur des importations nationales d engrais azotés phosphatés et potassiques":
+            selected_tab = Constants.import_potass_lib
+            item_tab = Constants.import_potass_lib_item
+            item_tab2 = Constants.import_potass_lib_item2
+            selected_table = "im_import_expot_engrais_tab143"
+            break
+        case "كمية وقيمة الصادرات الوطنية من الاسمدة الازوتية والفوسفاتية والبوتاسية", " Quantity and value of national exports of nitrogen and phosphate and potash fertilizers", "Quantité et valeur des exportations nationales d engrais azotés phosphatés et potassiques":
+            selected_tab = Constants.export_potass_lib
+            item_tab = Constants.export_potass_lib_item
+            item_tab2 = Constants.export_potass_lib_item2
+            selected_table = "ex_import_expot_engrais_tab143"
+            break
+        case " كمية وقيمة الصادرات الوطنية من المطهرات والمبيدات والالات الزراعية", "Quantity and value of national exports of disinfectants pesticides and agricultural machinery", "Quantité et valeur des exportations nationales de désinfectants de pesticides et de machines agricoles":
+            selected_tab = Constants.export_import_moutahir_lib
+            item_tab = Constants.export_import_moutahir_lib_item
+            item_tab2 = Constants.export_import_moutahir_lib_item2
+            selected_table = "ex_import_expot_mach_tab142"
+            break
         default:
             break
         }
+            
+        for n in 0...selected_tab.count-1 {
+            item_list.append(Item(name: selected_tab[n], checked: false))
+        }
+
+        
+        
     }
     @IBAction func validate(_ sender: UIButton) {
-        if selected_item.count == 0 && selected_item2.count == 0 {
-            
-        }else {
+        if selected_item.count != 0 || selected_item2.count != 0 {
             performSegue(withIdentifier: "charSettingsSegue", sender: nil)
         }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return selected_tab.count
+        return item_list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -144,9 +166,13 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
         checkBox.style = .tick
         checkBox.borderStyle = .square
         checkBox.checkboxBackgroundColor = #colorLiteral(red: 0.2319583297, green: 0.4583241343, blue: 0.1610836089, alpha: 1)
-        checkBox.isChecked = state[indexPath.row]
+        if item_list[indexPath.row].checked {
+            checkBox.isChecked = true
+        } else {
+            checkBox.isChecked = false
+        }
         let name = cell.contentView.viewWithTag(201) as! UILabel
-        name.text = selected_tab[indexPath.row]
+        name.text = item_list[indexPath.row].name
         return cell
     }
     
@@ -157,10 +183,28 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
         if indexPath.row == 0 {
             if checkbox.isChecked == true {
                 checkbox.isChecked = false
-                //state = [false,false,false,false,false]
+                for item in item_list {
+                    item.checked = false
+                }
+                selected_item.removeAll()
+                selected_item2.removeAll()
+                selected_title.removeAll()
             }else {
                 checkbox.isChecked = true
-                //state = [true,true,true,true,true]
+                for item in item_list {
+                    item.checked = true
+                }
+                selected_item = item_tab
+                for n in 1...selected_tab.count-1 {
+                 selected_title.append(selected_tab[n])
+                }
+                switch choice {
+                case "الإنتاج النباتي  الحبوب والدرنات والمحاصيل السكرية", "Plant production: cereals and tubers and sugar crops", "Production végétale: céréales et tubercules et cultures sucrières", "توزيع اعداد الحيوانات وفقا للانواع ", "Distribution of animals according to species", "Répartition des animaux selon les espèces", "انتاج اللحوم الحمراء", "Production of red meat", "Production de viande rouge", "منتجات حيوانية أخرى", "Other animal products", "Autres produits origine animale", "المبيدات والعلاجات البيطرية المستخدمة", "Pesticides and veterinary treatments used", "Pesticides et traitements vétérinaires utilisés", "كمية الأسمدة الكيماوية المنتجة والمستهلكة", "Quantity of chemical fertilizers produced and consumed", "Quantité engrais chimiques produits et consommés", "كمية وقيمة الواردات الوطنية من الاسمدة الازوتية والفوسفاتية والبوتاسية", " Quantity and value of national imports of nitrogen and phosphate and potash fertilizers", "Quantité et valeur des importations nationales d engrais azotés phosphatés et potassiques":
+                    selected_item2 = item_tab2
+                    break
+                default:
+                    break
+                }
             }
             self.checkListTableView.reloadData()
 
@@ -171,7 +215,7 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
                 selected_title.remove(at: selected_title.firstIndex(of: selected_tab[indexPath.row])!)
 
                 switch choice {
-                case "الإنتاج النباتي  الحبوب والدرنات والمحاصيل السكرية", "Plant production: cereals and tubers and sugar crops", "Production végétale: céréales et tubercules et cultures sucrières", "توزيع اعداد الحيوانات وفقا للانواع ", "Distribution of animals according to species", "Répartition des animaux selon les espèces", "انتاج اللحوم الحمراء", "Production of red meat", "Production de viande rouge", "منتجات حيوانية أخرى", "Other animal products", "Autres produits origine animale", "المبيدات والعلاجات البيطرية المستخدمة", "Pesticides and veterinary treatments used", "Pesticides et traitements vétérinaires utilisés", "كمية الأسمدة الكيماوية المنتجة والمستهلكة", "Quantity of chemical fertilizers produced and consumed", "Quantité engrais chimiques produits et consommés":
+                case "الإنتاج النباتي  الحبوب والدرنات والمحاصيل السكرية", "Plant production: cereals and tubers and sugar crops", "Production végétale: céréales et tubercules et cultures sucrières", "توزيع اعداد الحيوانات وفقا للانواع ", "Distribution of animals according to species", "Répartition des animaux selon les espèces", "انتاج اللحوم الحمراء", "Production of red meat", "Production de viande rouge", "منتجات حيوانية أخرى", "Other animal products", "Autres produits origine animale", "المبيدات والعلاجات البيطرية المستخدمة", "Pesticides and veterinary treatments used", "Pesticides et traitements vétérinaires utilisés", "كمية الأسمدة الكيماوية المنتجة والمستهلكة", "Quantity of chemical fertilizers produced and consumed", "Quantité engrais chimiques produits et consommés", "كمية وقيمة الواردات الوطنية من الاسمدة الازوتية والفوسفاتية والبوتاسية", " Quantity and value of national imports of nitrogen and phosphate and potash fertilizers", "Quantité et valeur des importations nationales d engrais azotés phosphatés et potassiques":
                     selected_item2.remove(at: selected_item.firstIndex(of: item_tab2[indexPath.row-1])!)
                     break
                 default:
@@ -182,7 +226,7 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
                 selected_item.append(item_tab[indexPath.row-1])
                 selected_title.append(selected_tab[indexPath.row])
                 switch choice {
-                case "الإنتاج النباتي  الحبوب والدرنات والمحاصيل السكرية", "Plant production: cereals and tubers and sugar crops", "Production végétale: céréales et tubercules et cultures sucrières", "توزيع اعداد الحيوانات وفقا للانواع ", "Distribution of animals according to species", "Répartition des animaux selon les espèces", "انتاج اللحوم الحمراء", "Production of red meat", "Production de viande rouge", "منتجات حيوانية أخرى", "Other animal products", "Autres produits origine animale", "المبيدات والعلاجات البيطرية المستخدمة", "Pesticides and veterinary treatments used", "Pesticides et traitements vétérinaires utilisés", "كمية الأسمدة الكيماوية المنتجة والمستهلكة", "Quantity of chemical fertilizers produced and consumed", "Quantité engrais chimiques produits et consommés":
+                case "الإنتاج النباتي  الحبوب والدرنات والمحاصيل السكرية", "Plant production: cereals and tubers and sugar crops", "Production végétale: céréales et tubercules et cultures sucrières", "توزيع اعداد الحيوانات وفقا للانواع ", "Distribution of animals according to species", "Répartition des animaux selon les espèces", "انتاج اللحوم الحمراء", "Production of red meat", "Production de viande rouge", "منتجات حيوانية أخرى", "Other animal products", "Autres produits origine animale", "المبيدات والعلاجات البيطرية المستخدمة", "Pesticides and veterinary treatments used", "Pesticides et traitements vétérinaires utilisés", "كمية الأسمدة الكيماوية المنتجة والمستهلكة", "Quantity of chemical fertilizers produced and consumed", "Quantité engrais chimiques produits et consommés", "كمية وقيمة الواردات الوطنية من الاسمدة الازوتية والفوسفاتية والبوتاسية", " Quantity and value of national imports of nitrogen and phosphate and potash fertilizers", "Quantité et valeur des importations nationales d engrais azotés phosphatés et potassiques":
                     selected_item2.append(item_tab2[indexPath.row-1])
                     break
                 default:
@@ -234,7 +278,6 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
         default:
             break
         }
-        print(selected_chart)
     }
     @IBAction func prevChart(_ sender: UIButton) {
         switch chartNumber {
@@ -279,7 +322,6 @@ class ChartTypeViewController: UIViewController, UITableViewDataSource, UITableV
         default:
             break
         }
-        print(selected_chart)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

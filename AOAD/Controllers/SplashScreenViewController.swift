@@ -17,6 +17,7 @@ class SplashScreenViewController: UIViewController {
     @IBOutlet var container: UIView!
     
     var toMain = false
+    var lang = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +31,7 @@ class SplashScreenViewController: UIViewController {
         frenchBtn.clipsToBounds = true
         
         if toMain {
+            Language.setCurrentLanguage(lang)
             let containerViewController = ContainerViewController()
             self.navigationController?.pushViewController(containerViewController, animated: true)
         }else {

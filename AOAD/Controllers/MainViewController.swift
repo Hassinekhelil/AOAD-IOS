@@ -140,7 +140,7 @@ class MainViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
             break
         case "communicationSegue":
             let controller = segue.destination as! CommunicationOfficeViewController
-            controller.choice = "Communication office".localized(using: "Localizable")
+            controller.choice = "Communication Office".localized(using: "Localizable")
             break
         case "ministrieSegue":
             let controller = segue.destination as! MinistriesViewController

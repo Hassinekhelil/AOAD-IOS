@@ -20,6 +20,8 @@ class NewsViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     var favortie:Bool = false
     var favorites: [Favorite] = []
 
+    @IBOutlet weak var searchField: TextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         newsTableView.tableFooterView = UIView()
@@ -35,6 +37,10 @@ class NewsViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         if !favortie {
         getNews()
         }
+        if Language.getCurrentLanguage() == "ar" {
+            searchField.textAlignment = .right
+        }
+        searchField.placeholder = "search".localized(using: "Localizable")
     
     }
     
@@ -60,6 +66,20 @@ class NewsViewController: UIViewController,UITableViewDelegate, UITableViewDataS
             }
         }
         
+    }
+    
+    @IBAction func search(_ sender: UIButton) {
+        if searchField.text! != "" {
+            view.endEditing(true)
+            let sourceList:[News] = newsList
+            newsList.removeAll()
+            for item in sourceList {
+                if item.title.lowercased().contains(searchField.text!) {
+                    newsList.append(item)
+                }
+            }
+            newsTableView.reloadData()
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -142,4 +162,21 @@ class NewsViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         newsTableView.reloadData()
     }
 
+}
+
+class TextField: UITextField {
+
+    let padding = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+
+    override open func textRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.inset(by: padding)
+    }
+
+    override open func placeholderRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.inset(by: padding)
+    }
+
+    override open func editingRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.inset(by: padding)
+    }
 }

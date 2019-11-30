@@ -16,7 +16,6 @@ struct Constants{
     static let get_statistic_data = "http://aoadstat.org/MOBILE/Menu/statistic_ios.php"
     static let get_communication_office = "http://aoadstat.org/MOBILE/Liste_Pays/bureau.php"
     static let get_departments = "http://aoadstat.org/MOBILE/Liste_Pays/listemin.php"
-
     
     static let population_lib:[String] = ["All".localized(using: "Localizable"),"Population".localized(using: "Localizable"),"Rural population".localized(using: "Localizable"),"Man power".localized(using: "Localizable"),"Agricultural Manpower".localized(using: "Localizable")]
     static let population_lib_item:[String] = ["pop_mas_y","pop_rurale_mas_y","main_euvre_mas_y","main_euvre_agri_mas_y"]
@@ -52,15 +51,15 @@ struct Constants{
     static let viande_prod_lib_item:[String] = ["SUM(totprodintviroug+totprodextviroug) AS cereal_superf","SUM(prodintbov+prodextbov) as cereal_prod","SUM(prodintmou+prodextmou)AS pomt_superf","SUM(prodintibel+prodextibel)AS pomt_prod","SUM(totprodintviavis+totprodextviavis) AS sucre_superf",]
     static let viande_prod_lib_item2:[String] = ["cereal_superf","cereal_prod","pomt_superf","pomt_prod","sucre_superf",]
     
+
     
-    
-    static let poulet_lib:[String] = ["All".localized(using: "Localizable"),"Production of a thousand tons of chicken meat".localized(using: "Localizable"),"Production of other poultry meat by thousand tons ".localized(using: "Localizable"),"Production of cat meat in thousand tons".localized(using: "Localizable"),"Egg production in million eggs".localized(using: "Localizable")]
+    static let poulet_lib:[String] = ["All".localized(using: "Localizable"),"Production of a thousand tons of chicken meat".localized(using: "Localizable"),"Production of other poultry meat by thousand tons".localized(using: "Localizable"),"Production of cat meat in thousand tons".localized(using: "Localizable"),"Egg production in million eggs".localized(using: "Localizable")]
     static let poulet_lib_item:[String] = ["prodvipoul","prodviautre","prodvilap","prodvihac","prodeuf"]
     
     
     
     
-    static let prod_animal_other_lib:[String] = ["All".localized(using: "Localizable"),"Production of honey per ton".localized(using: "Localizable"),"Production of tonnes of leather".localized(using: "Localizable")]
+    static let prod_animal_other_lib:[String] = ["All".localized(using: "Localizable"),"Production of honey per ton".localized(using: "Localizable"),"Production of tonnes of leather".localized(using: "Localizable"),"Production of wool per ton".localized(using: "Localizable")]
     static let prod_animal_other_lib_item:[String] = ["SUM(prodmimu+prodmibo)AS cereal_superf","SUM(prodcuir)AS cereal_prod","SUM(prodlaine)AS pomt_superf"]
      static let prod_animal_other_lib_item2:[String] = ["cereal_superf","cereal_prod","pomt_superf"]
     
@@ -89,10 +88,23 @@ struct Constants{
      static let fongicide_vet_lib_item2:[String] = ["cereal_superf","cereal_prod", "pomt_superf", "pomt_prod"]
     
     
-    static let pesticide_prodconsom_lib:[String] = ["All".localized(using: "Localizable"),"National production of nitrogen fertilizers per tonv".localized(using: "Localizable"),"Total nitrogen fertilizer consumption in ton".localized(using: "Localizable"),"National production of phosphate fertilizers per ton".localized(using: "Localizable"),"Total consumption of phosphate fertilizers in ton".localized(using: "Localizable"),"National production of potash fertilizers per ton".localized(using: "Localizable"),"Total consumption of potassium fertilizer in ton".localized(using: "Localizable")]
+    static let pesticide_prodconsom_lib:[String] = ["All".localized(using: "Localizable"),"National production of nitrogen fertilizers per ton".localized(using: "Localizable"),"Total nitrogen fertilizer consumption in ton".localized(using: "Localizable"),"National production of phosphate fertilizers per ton".localized(using: "Localizable"),"Total consumption of phosphate fertilizers in ton".localized(using: "Localizable"),"National production of potash fertilizers per ton".localized(using: "Localizable"),"Total consumption of potassium fertilizer in ton".localized(using: "Localizable")]
     static let pesticide_prodconsom_lib_item:[String] = ["SUM(pazote+pazote1+pazote2)AS pazote", "SUM(tazote+tazote1+tazote2)as tazote", "SUM(pphosphate+pphosphate1+pphosphate2)as pphosphate", "SUM(tphosphate1+tphosphate+tphosphate2)as tphosphate", "SUM(ppotassium+ppotassium1+ppotassium2)as ppotassium", "SUM(tpotassium+tpotassium1+tpotassium2)AS tpotassioom"]
      static let pesticide_prodconsom_lib_item2:[String] = ["pazote", "tazote", "pphosphate", "tphosphate", "ppotassium", "tpotassioom"]
     
+    
+    static let import_potass_lib:[String] = ["All".localized(using: "Localizable"),"Quantité des importations d'engrais azotés".localized(using: "Localizable"),"La valeur des importations nationales d'engrais azotés".localized(using: "Localizable"),"Quantité des importations nationales d'engrais phosphatés".localized(using: "Localizable"),"Valeur des importations nationales d'engrais phosphatés".localized(using: "Localizable"),"Quantité des importations nationales d'engrais potassiques".localized(using: "Localizable"),"La valeur des importations nationales d'engrais potassiques".localized(using: "Localizable")]
+    static let import_potass_lib_item:[String] = ["SUM(qimineraux+qinitrate+qiuree)as pop_mas_y", "SUM(vimineraux+vinitrate+viuree)as pop_ruale_mas_y", "SUM(qiphosphate+qiphosphate_cal) as main_euvre_mas_y", "SUM(viphosphate+viphosphate_cal) as main_euvre_agr_mas_y", "SUM(qisulfate+qichlor+qiengrais) as sucre_super", "SUM(visulfate+vichlor+viengrais) as sucre_prod"]
+     static let import_potass_lib_item2:[String] = ["pop_mas_y", "pop_ruale_mas_y", "main_euvre_mas_y", "main_euvre_agr_mas_y", "sucre_super", "sucre_prod"]
+    
+    static let export_potass_lib:[String] = ["All".localized(using: "Localizable"),"Quantity of Nitrogen Fertilizer Exports".localized(using: "Localizable"),"The value of national exports of nitrogen fertilizers".localized(using: "Localizable"),"Quantity of national exports of phosphate fertilizers".localized(using: "Localizable"),"Value of national exports of phosphate fertilizers".localized(using: "Localizable"),"Quantity of national exports of potash fertilizers".localized(using: "Localizable"),"The value of national exports of potash fertilizers".localized(using: "Localizable")]
+    static let export_potass_lib_item:[String] = ["SUM(qimineraux+qinitrate+qiuree)as pop_mas_y", "SUM(vimineraux+vinitrate+viuree)as pop_ruale_mas_y", "SUM(qiphosphate+qiphosphate_cal) as main_euvre_mas_y", "SUM(viphosphate+viphosphate_cal) as main_euvre_agr_mas_y", "SUM(qisulfate+qichlor+qiengrais) as sucre_super", "SUM(visulfate+vichlor+viengrais) as sucre_prod"]
+     static let export_potass_lib_item2:[String] = ["pop_mas_y", "pop_ruale_mas_y", "main_euvre_mas_y", "main_euvre_agr_mas_y", "sucre_super", "sucre_prod"]
+    
+    
+    static let export_import_moutahir_lib:[String] = ["All".localized(using: "Localizable"),"Quantity of national exports of disinfectants and pesticides".localized(using: "Localizable"),"Value of national exports of disinfectants and pesticides".localized(using: "Localizable"),"Quantity of national agricultural machinery exports by number".localized(using: "Localizable"),"Value of national agricultural machinery exports by number".localized(using: "Localizable")]
+    static let export_import_moutahir_lib_item:[String] = ["SUM(qetrait_vet+qeinsect+qefongic+qeherbi)as pop_mas_y", "SUM(vetrait_vet+veinsect+vefongic+veherbi)as pop_ruale_mas_y", "SUM(qemach_lait+qetract+qemoisson+qemach_volait+qemach_agric) as main_euvre_mas_y", "SUM(vemach_lait+vetract+vemoisson+vemach_volait+vemach_agric) as main_euvre_agr_mas_y"]
+     static let export_import_moutahir_lib_item2:[String] = ["pop_mas_y", "pop_ruale_mas_y", "main_euvre_mas_y", "main_euvre_agr_mas_y"]
     
     static let countries:[String] = ["Hashemite kingdom of Jordan".localized(using: "Localizable"),"United Arab Emirates".localized(using: "Localizable"),"Kingdom of Bahrain".localized(using: "Localizable"),"Republic of Tunisia".localized(using: "Localizable"),"Republic of Algeria".localized(using: "Localizable"),"Republic of Djibouti".localized(using: "Localizable"),"Kingdom of Saudi Arabia".localized(using: "Localizable"),"Republic of The Sudan".localized(using: "Localizable"),"Syrian Arab Republic".localized(using: "Localizable"),"Somali Democratic Republic".localized(using: "Localizable"),"Republic of Iraq".localized(using: "Localizable"),"Sultanate of Oman".localized(using: "Localizable"),"State of Palestine".localized(using: "Localizable"),"Qatar".localized(using: "Localizable"),"Kuwait".localized(using: "Localizable"),"Republic of Lebanon".localized(using: "Localizable"),"Libya".localized(using: "Localizable"),"Arab Republic of Egypt".localized(using: "Localizable"),"Kingdom of Morocco".localized(using: "Localizable"),"Islamic Republic of Mauritania".localized(using: "Localizable"),"Republic of Yemen".localized(using: "Localizable"),"Union of the Comoros".localized(using: "Localizable")]
     

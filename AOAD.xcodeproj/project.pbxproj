@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4458B7CE138451A07542529F /* Pods_AOAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AF89DB1951D15996E72DA9 /* Pods_AOAD.framework */; };
 		DD022B7623365FA100384E15 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD022B7523365FA100384E15 /* ChartViewController.swift */; };
+		DD18671B238D36C900A98D7E /* CustomInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD186719238D36C900A98D7E /* CustomInfoWindow.swift */; };
+		DD18671C238D36C900A98D7E /* CustomInfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD18671A238D36C900A98D7E /* CustomInfoWindow.xib */; };
+		DD18671E238D7A4C00A98D7E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18671D238D7A4B00A98D7E /* Item.swift */; };
 		DD1C82132320FF25008B1179 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD1C82152320FF25008B1179 /* Localizable.strings */; };
 		DD1C821C23214052008B1179 /* Pib_class.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C821B23214052008B1179 /* Pib_class.swift */; };
 		DD2C604F231D0F52003B10B1 /* ChartTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2C604E231D0F52003B10B1 /* ChartTypeViewController.swift */; };
@@ -58,6 +61,9 @@
 		82B637CD92411BD2880C92B2 /* Pods-AOAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOAD.release.xcconfig"; path = "Target Support Files/Pods-AOAD/Pods-AOAD.release.xcconfig"; sourceTree = "<group>"; };
 		B8AF89DB1951D15996E72DA9 /* Pods_AOAD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AOAD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD022B7523365FA100384E15 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		DD186719238D36C900A98D7E /* CustomInfoWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInfoWindow.swift; sourceTree = "<group>"; };
+		DD18671A238D36C900A98D7E /* CustomInfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomInfoWindow.xib; sourceTree = "<group>"; };
+		DD18671D238D7A4B00A98D7E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		DD1C82162320FF26008B1179 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DD1C821B23214052008B1179 /* Pib_class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pib_class.swift; sourceTree = "<group>"; };
 		DD2C604E231D0F52003B10B1 /* ChartTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTypeViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +197,7 @@
 				DD7780EB233A6C110043C47F /* CommunicationOffice.swift */,
 				DDB2326E233B365B0045AC03 /* Ministrie.swift */,
 				DDB2327C233B82150045AC03 /* Chart.swift */,
+				DD18671D238D7A4B00A98D7E /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +205,7 @@
 		DD3C108A23155E0D00412EA9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD18671A238D36C900A98D7E /* CustomInfoWindow.xib */,
 				DD3C107B23155B7000412EA9 /* Main.storyboard */,
 				DD3C108023155B7200412EA9 /* LaunchScreen.storyboard */,
 			);
@@ -260,6 +268,7 @@
 		DD8D28EB2315716000FFAB66 /* Custom view */ = {
 			isa = PBXGroup;
 			children = (
+				DD186719238D36C900A98D7E /* CustomInfoWindow.swift */,
 				DD7DC41A232A4FB000AD2286 /* SelfSizedTableView.swift */,
 				DDEC0AC5231C593100CE5E15 /* CheckBox.swift */,
 				DD2C6054231D456A003B10B1 /* UIStepperController.swift */,
@@ -341,6 +350,7 @@
 			files = (
 				DD3C108223155B7200412EA9 /* LaunchScreen.storyboard in Resources */,
 				DD1C82132320FF25008B1179 /* Localizable.strings in Resources */,
+				DD18671C238D36C900A98D7E /* CustomInfoWindow.xib in Resources */,
 				DDA29F6323280487003C72C3 /* GoogleService-Info.plist in Resources */,
 				DD3C107F23155B7200412EA9 /* Assets.xcassets in Resources */,
 				DD3C107D23155B7000412EA9 /* Main.storyboard in Resources */,
@@ -463,11 +473,13 @@
 				DD7DC421232ABD6100AD2286 /* MemberCountriesViewController.swift in Sources */,
 				DD7DC427232B6D6700AD2286 /* DocumentsViewController.swift in Sources */,
 				DDEC0AC4231959D400CE5E15 /* NetworkManager.swift in Sources */,
+				DD18671E238D7A4C00A98D7E /* Item.swift in Sources */,
 				DDB23273233B3A800045AC03 /* MinistriesViewController.swift in Sources */,
 				DD3C107823155B7000412EA9 /* AppDelegate.swift in Sources */,
 				DD2C6051231D2237003B10B1 /* Constants.swift in Sources */,
 				DD7DC41B232A4FB000AD2286 /* SelfSizedTableView.swift in Sources */,
 				DDA29F56232799F9003C72C3 /* ContainerViewController.swift in Sources */,
+				DD18671B238D36C900A98D7E /* CustomInfoWindow.swift in Sources */,
 				DD1C821C23214052008B1179 /* Pib_class.swift in Sources */,
 				DD7780EC233A6C110043C47F /* CommunicationOffice.swift in Sources */,
 				DD2C604F231D0F52003B10B1 /* ChartTypeViewController.swift in Sources */,

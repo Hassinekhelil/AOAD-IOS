@@ -27,6 +27,17 @@ class ChartSettingsViewController: UIViewController, UIStepperControllerDelegate
     @IBOutlet weak var countryCheckBox: CheckBox!
     @IBOutlet weak var regionsCheckBox: CheckBox!
     @IBOutlet weak var countriesTableView: UITableView!
+    
+    
+    @IBOutlet weak var dateOfLbl: UILabel!
+    @IBOutlet weak var dateToLbl: UILabel!
+    @IBOutlet weak var validateBtn: UIButton!
+    @IBOutlet weak var compareDescriptionLbl: UILabel!
+
+    @IBOutlet weak var countryLbl: UILabel!
+    @IBOutlet weak var regionsLbl: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -57,6 +68,13 @@ class ChartSettingsViewController: UIViewController, UIStepperControllerDelegate
         regionsCheckBox.style = .circle
         regionsCheckBox.borderStyle = .rounded
         
+        dateOfLbl.text = "Date of :".localized(using: "Localizable")
+        dateToLbl.text = "Date to :".localized(using: "Localizable")
+        validateBtn.setTitle("Validate statistics".localized(using: "Localizable"), for: .normal)
+        compareDescriptionLbl.text = "Compare between the following member countries".localized(using: "Localizable")
+        countryLbl.text = "Country".localized(using: "Localizable")
+        regionsLbl.text = "Regions".localized(using: "Localizable")
+
     }
     
     func stepperDidAddValues(stepper: UIStepperController) {

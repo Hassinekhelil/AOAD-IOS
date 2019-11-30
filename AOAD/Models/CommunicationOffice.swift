@@ -26,14 +26,14 @@ class CommunicationOffice: NSObject {
     }
     
     init(data : JSON) {
-        country = data["lib_pays_en"].string!
+        country = data["lib_pays"].string!
         lat = data["Latitude"].string!
         lng = data["Longitude"].string!
-        region = data["Longitude"].string!
-        chef = data["Longitude"].string!
-        tel = data["Longitude"].string!
-        fax = data["Longitude"].string!
-        email = data["Longitude"].string!
-        adress = data["Longitude"].string!
+        region = data["region"].string!
+        chef = data["chef_b"].string!
+        tel = data["tel_b"].string!
+        fax = data["fax_b"].string!
+        email = data["email_b"].string!
+        adress = data["adresse_b"].string!
     }
 }

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwitchLanguage
 
 class CustomAlertViewViewController: UIViewController {
 
@@ -77,22 +76,12 @@ class CustomAlertViewViewController: UIViewController {
         }
     }
     @IBAction func valid(_ sender: UIButton) {
-        Language.setCurrentLanguage(selected_lang)
+        //Language.setCurrentLanguage(selected_lang)
         self.dismiss(animated: true, completion: nil)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "splashVC") as! SplashScreenViewController
         vc.toMain = true
+        vc.lang = selected_lang
         self.nav?.pushViewController(vc, animated: true)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

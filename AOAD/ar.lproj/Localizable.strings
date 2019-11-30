@@ -16,6 +16,10 @@
 "Date to :" = "السنة إلى";
 "Validate statistics" = "عرض الإحصائيات";
 "Choice of statistical items to compare" = "اختيار العناصر الإحصائية للمقارنة";
+"Compare between the following member countries" = "قارن بين البلدان الأعضاء للمنظمة حسب";
+"Country" = "الدول";
+"Regions" = "الأقاليم";
+
 
 //SideMenuOptions
 "Favorite list" = "القائمة المفضلة";
@@ -124,11 +128,34 @@
 
 "All" = "الكل";
 "National production of nitrogen fertilizers per ton"  = "الانتاج المحلى من الأسمدة النيتروجينية بالطن";
-"Total nitrogen fertilizer consumption in ton"  = "جملة إستهلاك الأسمدة النيتروجينية بالطنn";
+"Total nitrogen fertilizer consumption in ton"  = "جملة إستهلاك الأسمدة النيتروجينية بالطن";
 "National production of phosphate fertilizers per ton"  = "الانتاج المحلى من الأسمدة الفوسفاتية بالطن";
 "Total consumption of phosphate fertilizers in ton"  = "ملة إستهلاك الأسمدة الفوسفاتية بالطن";
 "National production of potash fertilizers per ton"  = "الانتاج المحلى من الأسمدة البوتاسية بالطن";
 "Total consumption of potassium fertilizer in ton"  = "ملة إستهلاك الأسمدة البوتاسية بالطن";
+
+"All" = "الكل";
+"Quantité des importations d'engrais azotés" = "كمية الواردات الوطنية من الأسمدة الأزوتية";
+"La valeur des importations nationales d'engrais azotés" = "قيمة الواردات الوطنية من الأسمدة الأزوتية";
+"Quantité des importations nationales d'engrais phosphatés" = "كمية الواردات الوطنية من الأسمدة الفوسفاتية";
+"Valeur des importations nationales d'engrais phosphatés" = "قيمة الواردات الوطنية من الأسمدة الفوسفاتية";
+"Quantité des importations nationales d'engrais potassiques" = "كمية الواردات الوطنية من الأسمدة البـوتاسية";
+"La valeur des importations nationales d'engrais potassiques" = "قيمة الواردات الوطنية من أسمدة البـوتاسية";
+
+"All" = "الكل";
+"Quantity of Nitrogen Fertilizer Exports" = "كمية الصادرات الوطنية من الأسمدة الأزوتية";
+"The value of national exports of nitrogen fertilizers" = "قيمة الصادرات الوطنية من الأسمدة الأزوتية";
+"Quantity of national exports of phosphate fertilizers" = "كمية الصادرات الوطنية من الأسمدة الفوسفاتية";
+"Value of national exports of phosphate fertilizers" = "قيمة الصادرات الوطنية من الأسمدة الفوسفاتية";
+"Quantity of national exports of potash fertilizers" = "كمية الصادرات الوطنية من الأسمدة البـوتاسية";
+"The value of national exports of potash fertilizers" = "قيمة الصادرات الوطنية من أسمدة البـوتاسية";
+
+"All" = "الكل";
+"Quantity of national exports of disinfectants and pesticides" = "كمية الصادرات الوطنية من المطهرات ومبيدات";
+"Value of national exports of disinfectants and pesticides" = "قيمة الصادرات الوطنية من المطهرات ومبيدات";
+"Quantity of national agricultural machinery exports by number" = "كمية الصادرات الوطنية من الألات الزراعية بالعدد";
+"Value of national agricultural machinery exports by number" = "قيمة الصادرات الوطنية من الألات الزراعية بالعدد";
+
 
 "Hashemite kingdom of Jordan" = "المملكة الأردنية الهاشمية";
 "United Arab Emirates" = "الإِمَارات العربِيَّة المُتَّحِدة";
@@ -164,3 +191,14 @@
 "phone" = "الهاتف : 472176 183 00249";
 "fax" = "فاكس : 471050 183 00249";
 "General Directorate of the Organization for Agricultural Development" = "الإدارة العامة للمنظمة العربية للتنمية الزراعية";
+
+"Region" = "الإقليم : ";
+"Chef" = "رئيس المكتب : ";
+"Tel" = "الهاتف : ";
+"Fax" = "الفاكس : ";
+"Email" = "البريد الالكتروني : ";
+"Address" = "العنوان : ";
+
+"Click" = "انقر للدخول إلى الموقع";
+
+"search" = "بحث...";

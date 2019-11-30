@@ -16,6 +16,10 @@
 "Date to :" = "Date à :";
 "Validate statistics" = "Valider les Statistiques";
 "Choice of statistical items to compare" = "Choix des champs à comparer";
+"Compare between the following member countries" = "Comparer entre les pays membres suivant:";
+"Country" = "Pays";
+"Regions" = "Régions";
+
 
 //SideMenuOptions
 "Favorite list" = "Liste des Favoris";
@@ -130,6 +134,29 @@
 "National production of potash fertilizers per ton"  = "Production nationale d'engrais potassiques par tonne";
 "Total consumption of potassium fertilizer in ton"  = "Consommation totale d'engrais de potassium en tonnes";
 
+"All" = "Tous";
+"Quantité des importations d'engrais azotés" = "Quantité des importations d'engrais azotés";
+"La valeur des importations nationales d'engrais azotés" = "La valeur des importations nationales d'engrais azotés";
+"Quantité des importations nationales d'engrais phosphatés" = "Quantité des importations nationales d'engrais phosphatés";
+"Valeur des importations nationales d'engrais phosphatés" = "Valeur des importations nationales d'engrais phosphatés";
+"Quantité des importations nationales d'engrais potassiques" = "Quantité des importations nationales d'engrais potassiques";
+"La valeur des importations nationales d'engrais potassiques" = "La valeur des importations nationales d'engrais potassiques";
+
+"All" = "Tous";
+"Quantity of Nitrogen Fertilizer Exports" = "Quantité d'exportations d'engrais azotés";
+"The value of national exports of nitrogen fertilizers" = "La valeur des exportations nationales d'engrais azotés";
+"Quantity of national exports of phosphate fertilizers" = "Quantité d'exportations nationales d'engrais phosphatés";
+"Value of national exports of phosphate fertilizers" = "Valeur des exportations nationales d'engrais phosphatés";
+"Quantity of national exports of potash fertilizers" = "Quantité d'exportations nationales d'engrais potassiques";
+"The value of national exports of potash fertilizers" = "La valeur des exportations nationales d'engrais potassiques";
+
+"All" = "Tous";
+"Quantity of national exports of disinfectants and pesticides" = "Quantité des exportations nationales de désinfectants et de pesticides";
+"Value of national exports of disinfectants and pesticides" = "Valeur des exportations nationales de désinfectants et de pesticides";
+"Quantity of national agricultural machinery exports by number" = "Quantité des exportations nationales de machines agricoles par nombre";
+"Value of national agricultural machinery exports by number" = "Valeur des exportations nationales de machines agricoles par nombre";
+
+
 "Hashemite kingdom of Jordan" = "Royaume hachémite de Jordanie";
 "United Arab Emirates" = "Émirats arabes unis";
 "Kingdom of Bahrain" = "Royaume de Bahreïn";
@@ -165,4 +192,13 @@
 "fax" = "Fax: 00249 183471050";
 "General Directorate of the Organization for Agricultural Development" = "Direction générale de l'Organisation de développement agricole";
 
+"Region" = "Région : ";
+"Chef" = "Directeur de Bureau : ";
+"Tel" = "Tel : ";
+"Fax" = "Fax : ";
+"Email" = "Email : ";
+"Address" = "Adresse : ";
 
+"Click" = "cliquer pour entrer le site internet";
+
+"search" = "recherche...";

@@ -16,6 +16,9 @@
 "Date to :" = "Date to :";
 "Validate statistics" = "Validate statistics";
 "Choice of statistical items to compare" = "Choice of statistical items to compare";
+"Compare between the following member countries" = "Compare between the following member countries:";
+"Country" = "Country";
+"Regions" = "Regions";
 
 //SideMenuOptions
 "Favorite list" = "Favorite list";
@@ -90,7 +93,7 @@
 
 "All" = "All";
 "Production of honey per ton"  = "Production of honey per ton";
-"Production of tonnes of leather"  = "Production of tonnes of leather";
+"Production of tonnes of leather"  = "Production of leather per ton";
 "Production of wool per ton"  = "Production of wool per ton";
 
 "All" = "All";
@@ -130,6 +133,28 @@
 "National production of potash fertilizers per ton"  = "National production of potash fertilizers per tonne";
 "Total consumption of potassium fertilizer in ton"  = "Total consumption of potassium fertilizer in tonnes";
 
+"All" = "All";
+"Quantité des importations d'engrais azotés" = "Quantity of Nitrogen Fertilizer Imports";
+"La valeur des importations nationales d'engrais azotés" = "The value of national imports of nitrogen fertilizers";
+"Quantité des importations nationales d'engrais phosphatés" = "Quantity of national imports of phosphate fertilizers";
+"Valeur des importations nationales d'engrais phosphatés" = "Value of national imports of phosphate fertilizers";
+"Quantité des importations nationales d'engrais potassiques" = "Quantity of national imports of potash fertilizers";
+"La valeur des importations nationales d'engrais potassiques" = "The value of national imports of potash fertilizers";
+
+"All" = "All";
+"Quantity of Nitrogen Fertilizer Exports" = "Quantity of Nitrogen Fertilizer Exports";
+"The value of national exports of nitrogen fertilizers" = "The value of national exports of nitrogen fertilizers";
+"Quantity of national exports of phosphate fertilizers" = "Quantity of national exports of phosphate fertilizers";
+"Value of national exports of phosphate fertilizers" = "Value of national exports of phosphate fertilizers";
+"Quantity of national exports of potash fertilizers" = "Quantity of national exports of potash fertilizers";
+"The value of national exports of potash fertilizers" = "The value of national exports of potash fertilizers";
+
+"All" = "All";
+"Quantity of national exports of disinfectants and pesticides" = "Quantity of national exports of disinfectants and pesticides";
+"Value of national exports of disinfectants and pesticides" = "Value of national exports of disinfectants and pesticides";
+"Quantity of national agricultural machinery exports by number" = "Quantity of national agricultural machinery exports by number";
+"Value of national agricultural machinery exports by number" = "Value of national agricultural machinery exports by number";
+
 "Hashemite kingdom of Jordan" = "Hashemite kingdom of Jordan";
 "United Arab Emirates" = "United Arab Emirates";
 "Kingdom of Bahrain" = "Kingdom of Bahrain";
@@ -166,3 +191,13 @@
 
 "General Directorate of the Organization for Agricultural Development" = "Direction générale de l'Organisation de développement agricole";
 
+"Region" = "Region : ";
+"Chef" = "Office Manager : ";
+"Tel" = "Tel : ";
+"Fax" = "Fax : ";
+"Email" = "Email : ";
+"Address" = "Address : ";
+
+"Click" = "click to enter the website";
+
+"search" = "search...";
